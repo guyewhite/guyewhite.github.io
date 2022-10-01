@@ -8,6 +8,13 @@ layout: default
   {{ content }}
 </div>
 
+<span class="post-tags">
+    {% for tag in page.tags %}
+      {% capture tag_name %}{{ tag }}{% endcapture %}
+      <a class="no-underline" href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+    {% endfor %}
+</span>
+
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
