@@ -1,1 +1,0 @@
-# guyewhite.github.io
