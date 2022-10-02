@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacy
+sitemap: false
 ---
 
 Updated: May 14, 2018

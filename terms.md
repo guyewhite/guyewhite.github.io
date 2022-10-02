@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Terms and Conditions of Use
+sitemap: false
 ---
 
 ## Agreement between user and Triumphant Heart International, Inc.
