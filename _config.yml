@@ -24,3 +24,9 @@ version:          2.1.0
 
 github:
   repo:           test
+
+gems:
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-sitemap
