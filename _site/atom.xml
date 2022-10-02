@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>gelvinwhite</title>
- <link href="https://www.gelvinwhite.com//atom.xml" rel="self"/>
- <link href="https://www.gelvinwhite.com//"/>
- <updated>2022-10-02T13:19:45-07:00</updated>
- <id>https://www.gelvinwhite.com/</id>
+ <link href="gelvinwhite.com/atom.xml" rel="self"/>
+ <link href="gelvinwhite.com/"/>
+ <updated>2022-10-02T13:25:50-07:00</updated>
+ <id>gelvinwhite.com</id>
  <author>
    <name>G. Elvin White</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>How to Create a Kontakt 7 Instrument (Part 1) - Hello World!</title>
-   <link href="https://www.gelvinwhite.com//kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument/"/>
+   <link href="gelvinwhite.com/kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument/"/>
    <updated>2022-09-30T16:00:00-07:00</updated>
-   <id>https://www.gelvinwhite.com//kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument</id>
+   <id>gelvinwhite.com/kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument</id>
    <content type="html">&lt;p&gt;Welcome to the beautiful pursuit of building your own instruments, effects, and plugins in the Kontakt Script Language.&lt;/p&gt;
 
 &lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
