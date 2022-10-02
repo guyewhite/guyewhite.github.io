@@ -15,4 +15,4 @@ I teach in at a well-known university in a well-known computer science course. I
 
 My primary contributions are in the form of Native Instruments®️ Kontakt®️ Libraries and in step-by-step instruction for programming Native Instruments®️ Kontakt®️ Libraries.
 
-###### Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.
+*Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.*
