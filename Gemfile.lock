@@ -251,6 +251,7 @@ GEM
       unf_ext
     unf_ext (0.0.8.2)
     unicode-display_width (1.8.0)
+    webrick (1.7.0)
     zeitwerk (2.6.1)
 
 PLATFORMS
@@ -263,6 +264,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
+  webrick (~> 1.7)
 
 BUNDLED WITH
    2.0.2

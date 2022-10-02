@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      gelvinwhite &middot; A Jekyll theme
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+  <script src="https://kit.fontawesome.com/966f470220.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    // displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  // Autonumbering by mathjax
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          gelvinwhite
+        </a>
+      </h1>
+      <p class="lead">musical coding. generative music. algorithmic composition</p>
+    </div>
+
+    <nav class="sidebar-nav">
+     <a class="sidebar-nav-item active" href="/">Home</a>
+
+     <!-- Manual set order -->
+     <a class="sidebar-nav-item active" href="/categories">Categories</a>
+     <!-- <a class="sidebar-nav-item active" href="/projects">Projects</a> -->
+     <a class="sidebar-nav-item active" href="/about">About</a>
+
+     
+<div id="social-media">
+    
+    
+        
+        
+            <a href="https://www.instagram.com/gelvinwhite" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        
+    
+</div>
+
+
+
+   </nav>
+
+   <p>Copyright &copy; 2022 THI. All rights reserved. Operated by THI.</p>
+   <p><a href="/terms">Terms of Use</a> | <a href="/privacy">Privacy</a></p>
+ </div>
+</div>
+
+
+    <div class="content container">
+      <div id="archives">
+
+  <div class="archive-group">
+    
+    <div class="category-name"><div id="#KONTAKT"></div></div>
+    <p></p>
+
+    <div class="category-name">
+        <h2>KONTAKT</h2>
+    </div>
+    <a name="KONTAKT"></a>
+    
+    <article class="recent-posts">
+      <h4><a href="//kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument/">How to Create a Kontakt 7 Instrument (Part 1) - Hello World! </a></h4>
+    </article>
+
+    
+    <hr></hr>
+  </div>
+
+</div>
+
+<!--
+<div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument/">
+        How to Create a Kontakt 7 Instrument (Part 1) - Hello World!
+      </a>
+    </h1>
+
+    <span class="post-date">30 Sep 2022</span>
+
+    <p>Welcome to the beautiful pursuit of building your own instruments, effects, and plugins in the Kontakt Script Language.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>This tutorial requires a full version of Kontakt. Likely, Kontakt 5 or later is fine. However, screenshots in this tutorial are of Kontakt 7.</p>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>The Kontakt Script Language is a well-documented programming language with a thriving community behind it. As you get started, I recommend getting your hands on the following resources:</p>
+
+<ul>
+  <li>Obtain the <a href="https://www.native-instruments.com/forum/attachments/kontakt-script-language-pdf.86897/">Kontakt Script Language</a> development document. Ignore the age of this document or any references to Kontakt version numbers. It is masterfully written document that is exceedingly applicable today. This document provides a narrative introduction to the scripting language.</li>
+  <li>Obtain the <a href="https://www.native-instruments.com/fileadmin/ni_media/downloads/manuals/kontakt/KONTAKT_602_KSP_Reference_Manual.pdf">KSP Reference Manual</a>. As of time of this writing, the KSP Reference Manual discusses Kontakt 6. This is not a problem!</li>
+  <li>Join the <a href="https://www.native-instruments.com/en/community/">Native Instruments Community</a>.</li>
+  <li>Join the <a href="https://discord.com/invite/rTpCcpg">NI Kontakt Discord</a></li>
+</ul>
+
+<h3 id="step-one---find-the-scripting-environment">Step One - Find the Scripting Environment.</h3>
+
+<ul>
+  <li>
+    <p>Open your full version of Kontakt. Likely, you will see a screen like this:</p>
+
+    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/001.png" alt="kontakt splash screen with many libraries" title="kontakt splash screen" /></p>
+  </li>
+  <li>
+    <p>Next, click the file icon and then select <code class="language-plaintext highlighter-rouge">New instrument</code>.</p>
+
+    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/002.png" alt="kontakt splash screen with menu open creating new instrument" title="kontakt new instrument" /></p>
+  </li>
+  <li>
+    <p>Next, click the wrench <code class="language-plaintext highlighter-rouge">edit mode</code> icon.</p>
+
+    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/003.png" alt="kontakt interface with the wrench" title="kontakt edit mode" /></p>
+  </li>
+  <li>
+    <p>Next, click the <code class="language-plaintext highlighter-rouge">Script Editor</code> button.</p>
+
+    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/004.png" alt="kontakt opening script editor" title="kontakt opening script editor" /></p>
+  </li>
+  <li>
+    <p>Finally, click the <code class="language-plaintext highlighter-rouge">Edit</code> button.</p>
+
+    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/005.png" alt="kontakt edit button" title="kontakt edit button" /></p>
+  </li>
+  <li>
+    <p>You are now in the Script Editor. Congrats!</p>
+
+    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/006.png" alt="kontakt script editor" title="kontakt script editor" /></p>
+  </li>
+</ul>
+
+<h3 id="step-two---hello-world">Step Two - Hello World!</h3>
+
+<ul>
+  <li>Copy and paste the following code into the Script Editor window.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  on init
+
+  	message("Hello World!")
+
+  end on
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Now, click the <code class="language-plaintext highlighter-rouge">Apply</code> button.</p>
+  </li>
+  <li>
+    <p>Upon clicking <code class="language-plaintext highlighter-rouge">Apply</code>, you should see <code class="language-plaintext highlighter-rouge">Hello World!</code> appearing in the status bar / console at the bottom of the screen.</p>
+
+    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/007.png" alt="kontakt hello world" title="kontakt hello world" /></p>
+  </li>
+</ul>
+
+<h3 id="step-three---analyzing-the-script">Step Three - Analyzing the Script</h3>
+
+<p>The block of code from <code class="language-plaintext highlighter-rouge">on init</code> to <code class="language-plaintext highlighter-rouge">end on</code> is always run first by the script compiler. Anything that you put in this block of code will run!</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">message("Hello World!")</code> statement tells the compiler to output <code class="language-plaintext highlighter-rouge">Hello World!</code> into the console. You can change this message within the quotes to say anything you like. In future projects, you will find it exceptionally useful to be able to output to the console – such that you can provide yourself clues about what is happening in your code. This <code class="language-plaintext highlighter-rouge">message</code> function will be an invaluable tool you will use in the future to catch and understand bugs in your script.</p>
+
+<h3 id="congratulations">Congratulations</h3>
+
+<p>You have now created your first Kontakt script!</p>
+
+<p>The tutorial to follow will discuss adding buttons to your interface.</p>
+
+<p><em>Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.</em></p>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <span class="pagination-item older">Older</span>
+  
+  
+    <span class="pagination-item newer">Newer</span>
+  
+</div>
+-->
+
+    </div>
+
+  </body>
+</html>

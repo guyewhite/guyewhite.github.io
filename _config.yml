@@ -25,9 +25,6 @@ version:          2.1.0
 github:
   repo:           test
 
-gems:
-  - jekyll-sitemap
-
 plugins:
   -  jekyll-sitemap
 

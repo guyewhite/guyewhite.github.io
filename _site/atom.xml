@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>gelvinwhite</title>
+ <link href="https://www.gelvinwhite.com//atom.xml" rel="self"/>
+ <link href="https://www.gelvinwhite.com//"/>
+ <updated>2022-10-02T13:19:45-07:00</updated>
+ <id>https://www.gelvinwhite.com/</id>
+ <author>
+   <name>G. Elvin White</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>How to Create a Kontakt 7 Instrument (Part 1) - Hello World!</title>
+   <link href="https://www.gelvinwhite.com//kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument/"/>
+   <updated>2022-09-30T16:00:00-07:00</updated>
+   <id>https://www.gelvinwhite.com//kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument</id>
+   <content type="html">&lt;p&gt;Welcome to the beautiful pursuit of building your own instruments, effects, and plugins in the Kontakt Script Language.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;p&gt;This tutorial requires a full version of Kontakt. Likely, Kontakt 5 or later is fine. However, screenshots in this tutorial are of Kontakt 7.&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;The Kontakt Script Language is a well-documented programming language with a thriving community behind it. As you get started, I recommend getting your hands on the following resources:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Obtain the &lt;a href=&quot;https://www.native-instruments.com/forum/attachments/kontakt-script-language-pdf.86897/&quot;&gt;Kontakt Script Language&lt;/a&gt; development document. Ignore the age of this document or any references to Kontakt version numbers. It is masterfully written document that is exceedingly applicable today. This document provides a narrative introduction to the scripting language.&lt;/li&gt;
+  &lt;li&gt;Obtain the &lt;a href=&quot;https://www.native-instruments.com/fileadmin/ni_media/downloads/manuals/kontakt/KONTAKT_602_KSP_Reference_Manual.pdf&quot;&gt;KSP Reference Manual&lt;/a&gt;. As of time of this writing, the KSP Reference Manual discusses Kontakt 6. This is not a problem!&lt;/li&gt;
+  &lt;li&gt;Join the &lt;a href=&quot;https://www.native-instruments.com/en/community/&quot;&gt;Native Instruments Community&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Join the &lt;a href=&quot;https://discord.com/invite/rTpCcpg&quot;&gt;NI Kontakt Discord&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;step-one---find-the-scripting-environment&quot;&gt;Step One - Find the Scripting Environment.&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open your full version of Kontakt. Likely, you will see a screen like this:&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/001.png&quot; alt=&quot;kontakt splash screen with many libraries&quot; title=&quot;kontakt splash screen&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next, click the file icon and then select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;New instrument&lt;/code&gt;.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/002.png&quot; alt=&quot;kontakt splash screen with menu open creating new instrument&quot; title=&quot;kontakt new instrument&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next, click the wrench &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;edit mode&lt;/code&gt; icon.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/003.png&quot; alt=&quot;kontakt interface with the wrench&quot; title=&quot;kontakt edit mode&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next, click the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Script Editor&lt;/code&gt; button.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/004.png&quot; alt=&quot;kontakt opening script editor&quot; title=&quot;kontakt opening script editor&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finally, click the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Edit&lt;/code&gt; button.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/005.png&quot; alt=&quot;kontakt edit button&quot; title=&quot;kontakt edit button&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You are now in the Script Editor. Congrats!&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/006.png&quot; alt=&quot;kontakt script editor&quot; title=&quot;kontakt script editor&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;step-two---hello-world&quot;&gt;Step Two - Hello World!&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Copy and paste the following code into the Script Editor window.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  on init
+
+  	message(&quot;Hello World!&quot;)
+
+  end on
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now, click the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Apply&lt;/code&gt; button.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Upon clicking &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Apply&lt;/code&gt;, you should see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello World!&lt;/code&gt; appearing in the status bar / console at the bottom of the screen.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/007.png&quot; alt=&quot;kontakt hello world&quot; title=&quot;kontakt hello world&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;step-three---analyzing-the-script&quot;&gt;Step Three - Analyzing the Script&lt;/h3&gt;
+
+&lt;p&gt;The block of code from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;on init&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;end on&lt;/code&gt; is always run first by the script compiler. Anything that you put in this block of code will run!&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message(&quot;Hello World!&quot;)&lt;/code&gt; statement tells the compiler to output &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hello World!&lt;/code&gt; into the console. You can change this message within the quotes to say anything you like. In future projects, you will find it exceptionally useful to be able to output to the console – such that you can provide yourself clues about what is happening in your code. This &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message&lt;/code&gt; function will be an invaluable tool you will use in the future to catch and understand bugs in your script.&lt;/p&gt;
+
+&lt;h3 id=&quot;congratulations&quot;&gt;Congratulations&lt;/h3&gt;
+
+&lt;p&gt;You have now created your first Kontakt script!&lt;/p&gt;
+
+&lt;p&gt;The tutorial to follow will discuss adding buttons to your interface.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
