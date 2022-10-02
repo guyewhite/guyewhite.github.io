@@ -27,7 +27,7 @@ The Kontakt Script Language is a well-documented programming language with a thr
 
     ![kontakt splash screen with many libraries](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/001.png "kontakt splash screen")
 
-  * Next, click the file icon and then select `new instrument`.
+  * Next, click the file icon and then select `New instrument`.
 
     ![kontakt splash screen with menu open creating new instrument](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/002.png "kontakt new instrument")
 
@@ -64,6 +64,12 @@ The Kontakt Script Language is a well-documented programming language with a thr
   * Upon clicking `Apply`, you should see `Hello World!` appearing in the status bar / console at the bottom of the screen.
 
     ![kontakt hello world](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/007.png "kontakt hello world")
+
+### Step Three - Analyzing the Script
+
+The block of code from `on init` to `end on` is always run first by the script compiler. Anything that you put in this block of code will run!
+
+The `message("Hello World!")` statement tells the compiler to output `Hello World!` into the console. You can change this message within the quotes to say anything you like. In future projects, you will find it exceptionally useful to be able to output to the console -- such that you can provide yourself clues about what is happening in your code. This `message` function will be an invaluable tool you will use in the future to catch and understand bugs in your script.
 
 ### Congratulations
 
