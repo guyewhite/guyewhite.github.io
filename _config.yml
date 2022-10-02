@@ -10,12 +10,12 @@ relative_permalinks: false
 title:            gelvinwhite
 tagline:          'A Jekyll theme'
 description:      'musical coding. generative music. algorithmic composition'
-url:              https://www.gelvinwhite.com
-baseurl:          /
+url:              https://www.gelvinwhite.com/
+baseurl:          https://www.gelvinwhite.com/
 
 author:
   name:           'G. Elvin White'
-  url:            https://www.gelvinwhite.com
+  url:            https://www.gelvinwhite.com/
 
 paginate:         5
 
