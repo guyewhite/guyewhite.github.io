@@ -250,7 +250,9 @@ a.sidebar-nav-item:focus {
 }
 
 /* gelvinwhite */
-.category-head h2 {
+
+/* categories */
+.archive-group h2 {
   color: #fff;
   margin-top: 0;
   font-family: 'East Sea Dokdo', cursive;
