@@ -2,7 +2,7 @@
 layout: post
 title:  "How to Create a Kontakt 7 Instrument (Part 1)"
 date:   2022-10-1 07:00:00 +0800
-categories: KONTAKT 7
+categories: KONTAKT
 tags: kontact7
 ---
 
