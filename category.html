@@ -8,7 +8,7 @@ title: Categories
 {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
+    <div class="category-name"><div id="#{{ category_name | slugize }}"></div></div>
     <p></p>
 
     <div class="category-name">

@@ -252,7 +252,7 @@ a.sidebar-nav-item:focus {
 /* gelvinwhite */
 
 /* categories */
-.category-name h2 {
+.category-name {
   color: #fff;
   margin-top: 0;
   font-family: 'East Sea Dokdo', cursive;
