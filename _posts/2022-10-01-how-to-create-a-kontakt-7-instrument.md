@@ -29,7 +29,7 @@ The Kontakt Script Language is a well-documented programming language with a thr
 
   * Next, click the file icon and then select `new instrument`.
 
-    ![kontakt splash screen with menu open creating new instrument](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/002.png "kontakt new instrument")
+  ![kontakt splash screen with menu open creating new instrument](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/002.png "kontakt new instrument")
 
   * Next, click the wrench `edit mode` icon.
 
