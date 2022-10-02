@@ -4,7 +4,7 @@ title: Terms and Conditions of Use
 ---
 
 ## Agreement between user and Triumphant Heart International, Inc.
-Welcome to www.thedissertationmentor.com. The www.thedissertationmentor.com website (the "Site") is comprised of various web pages operated by Triumphant Heart International, Inc. ("THI"). The Site is offered to you conditioned on your acceptance without modification of the terms, conditions, and notices contained herein (the "Terms"). Your use of the Site constitutes your agreement to all such Terms. Please read these terms carefully, and keep a copy of them for your reference.
+Welcome to www.gelvinwhite.com. The www.gelvinwhite.com website (the "Site") is comprised of various web pages operated by Triumphant Heart International, Inc. ("THI"). The Site is offered to you conditioned on your acceptance without modification of the terms, conditions, and notices contained herein (the "Terms"). Your use of the Site constitutes your agreement to all such Terms. Please read these terms carefully, and keep a copy of them for your reference.
 
 ## The Site is a E-commerce Site
 We publish Triumphant Heart International® educational publications: namely, books, hand-outs, workbooks, printed and online training materials in the fields of entrepreneurship, organizational leadership, creative ideation, the writing process, and holistic health.
