@@ -25,27 +25,27 @@ The Kontakt Script Language is a well-documented programming language with a thr
 
   * Open your full version of Kontakt. Likely, you will see a screen like this:
 
-  ![kontakt splash screen with many libraries](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/001.png "kontakt splash screen")
+    ![kontakt splash screen with many libraries](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/001.png "kontakt splash screen")
 
   * Next, click the file icon and then select `new instrument`.
 
-  ![kontakt splash screen with menu open creating new instrument](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/002.png "kontakt new instrument")
+    ![kontakt splash screen with menu open creating new instrument](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/002.png "kontakt new instrument")
 
   * Next, click the wrench `edit mode` icon.
 
-  ![kontakt interface with the wrench](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/003.png "kontakt edit mode")
+    ![kontakt interface with the wrench](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/003.png "kontakt edit mode")
 
   * Next, click the `Script Editor` button.
 
-  ![kontakt opening script editor](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/004.png "kontakt opening script editor")
+    ![kontakt opening script editor](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/004.png "kontakt opening script editor")
 
   * Finally, click the `Edit` button.
 
-  ![kontakt edit button](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/005.png "kontakt edit button")
+    ![kontakt edit button](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/005.png "kontakt edit button")
 
   * You are now in the Script Editor. Congrats!
 
-  ![kontakt script editor](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/006.png "kontakt script editor")
+    ![kontakt script editor](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/006.png "kontakt script editor")
 
 ### Step Two - Hello World!
 
@@ -63,7 +63,7 @@ The Kontakt Script Language is a well-documented programming language with a thr
 
   * Upon clicking `Apply`, you should see `Hello World!` appearing in the status bar / console at the bottom of the screen.
 
-  ![kontakt hello world](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/007.png "kontakt hello world")
+    ![kontakt hello world](/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/007.png "kontakt hello world")
 
 ### Congratulations
 
