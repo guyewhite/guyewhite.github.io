@@ -41,7 +41,7 @@ Ensure that the script functions by clicking `Apply`. Upon clicking `Apply`, you
     ```
     Notice that `make_perfview` informs the compiler that there is a user interface that needs to be rendered to the user, even when they are not in the script editor. Without this line of code, your user interface will not be visible. Then, `set_ui_height_px` and `set_ui_width_px` tell the compiler the size of the performance view. As of Kontakt 7, the performance view is approximately 633px. Accordingly, anything wider than 633px will cause the window to resize. Anything less than 633px, at least on my computer, does not seem to render anything smaller than this baseline value.
 
-    Most important, notice the the curly `{}` braces, which allows you to comment your code. Throughout your process of learning how to program, I highly advise keeping good notes about what your code does! After all, when you return later in a week, month, or year, it's helpful to know what your code is doing.
+    Most important, notice the curly `{}` braces, which allows you to comment your code. Throughout your process of learning how to program, I highly advise keeping good notes about what your code does! After all, when you return later in a week, month, or year, it's helpful to know what your code is doing.
 
   * To ensure that your script is functioning, hit `apply`. Then, click the wrench icon to switch to performance view. Your window should look like this:
 
@@ -55,16 +55,16 @@ Ensure that the script functions by clicking `Apply`. Upon clicking `Apply`, you
     ```
     on init
 
-  	{set the basics of the UI, setting the height at 213 and width at 720}
-  	make_perfview
-  	set_ui_height_px(213)
-  	set_ui_width_px(633)
+    	{set the basics of the UI, setting the height at 213 and width at 720}
+    	make_perfview
+    	set_ui_height_px(213)
+    	set_ui_width_px(633)
 
-  	{declare a variable called $switch that is tied to a button. Set that switch to on }
-  	declare ui_switch $switch
-  	$switch := 1
+    	{declare a variable called $switch that is tied to a button. Set that switch to on }
+    	declare ui_switch $switch
+    	$switch := 1
 
-  	message("Hello World!")
+    	message("Hello World!")
 
     end on
     ```
@@ -107,7 +107,7 @@ Ensure that the script functions by clicking `Apply`. Upon clicking `Apply`, you
       end if
     end on
     ```
-    Notice that a new callback called `ui_control($switch)` is included. When `$switch1` is manipulated, this callback is called. Notice that the value of `$switch1` is passed to this callback using the `()` parentheses. Then, inside the callback, the `if` statement mades a decision. If `$switch = 1` or *on*, then `it's on!` is messaged in the console. Otherwise, `it's off` is messaged.
+    Notice that a new callback called `ui_control($switch)` is included. When `$switch1` is manipulated, this callback is called. Notice that the value of `$switch1` is passed to this callback using the `()` parentheses. Then, inside the callback, the `if` statement makes a decision. If `$switch = 1` or *on*, then `it's on!` is messaged in the console. Otherwise, `it's off` is messaged.
 
   * Click "Apply" and play with the button. Notice what is displayed in the console.
 
