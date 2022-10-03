@@ -23,7 +23,8 @@ Continuing from where we left off, please ensure that the following starter code
 
     end on
     ```
-    Ensure that the script functions by clicking `Apply`. Upon clicking `Apply`, you should see `Hello World!` appearing in the status bar / console at the bottom of the screen.
+
+Ensure that the script functions by clicking `Apply`. Upon clicking `Apply`, you should see `Hello World!` appearing in the status bar / console at the bottom of the screen.
 
 ### Step One - Creating the Performance View
 
