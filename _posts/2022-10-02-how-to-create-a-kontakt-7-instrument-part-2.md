@@ -40,7 +40,7 @@ Ensure that the script functions by clicking `Apply`. Upon clicking `Apply`, you
 
     end on
     ```
-    Notice that `make_perfview` informs the compiler that there is a user interface that needs to be rendered to the user, even when they are not in the script editor. Without this line of code, your user interface will not be visible. Then, `set_ui_height_px` and `set_ui_width_px` tell the compiler the size of the performance view. As of Kontakt 7, the performance view is approximately 633px. Accordingly, anything wider than 633px will cause the window to resize. Anything less than 633px, at least on my computer, does not seem to render anything smaller than this baseline value.
+    Notice that `make_perfview` informs the compiler that there is a user interface that needs to be rendered to the user, even when they are not in the script editor. Without this line of code, your user interface will not be visible. Then, `set_ui_height_px` and `set_ui_width_px` tell the compiler the size of the performance view.
 
     Most important, notice the curly `{}` braces, which allows you to comment your code. Throughout your process of learning how to program, I highly advise keeping good notes about what your code does! After all, when you return later in a week, month, or year, it's helpful to know what your code is doing.
 
