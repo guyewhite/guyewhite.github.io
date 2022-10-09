@@ -6,7 +6,7 @@ categories: KONTAKT
 tags: kontakt7
 ---
 
-Welcome to the third installment of my multi-part series about how to engage in the beautiful pursuit of building your own instruments, effects, and plugins in the Kontakt Script Language.
+Welcome to the third installment of my multi-part series about how to engage in the beautiful pursuit of building your own instruments, effects, and plugins in the Kontakt Script Processor (KSP).
 
 ## Prerequisites
 
@@ -413,6 +413,7 @@ Ensure that the script functions by clicking `Apply`. Upon clicking `Apply` foll
 
     end on
     ```
+
 ### Step Four - Your First Function
 
   * Functions are callbacks of your own design. Functions can be useful in executing blocks of code at will -- especially those that are repeated throughout your code. Notice how a specific block of code tends to repeat over and over again:
@@ -544,7 +545,7 @@ Ensure that the script functions by clicking `Apply`. Upon clicking `Apply` foll
 
     end on
     ```
-    Notice how the function called `resetRun` must appear above those callbacks that utilize this function. Through the utilization of this function, we are *abstracting away*, or simplifying, our code by taking a task that took six lines of code and reducing it down to a single line of code. Abstraction of this nature will become of particular importance as you develop as a Kontakt Script Language developer.
+    Notice how the function called `resetRun` must appear above those callbacks that utilize this function. Through the utilization of this function, we are *abstracting away*, or simplifying, our code by taking a task that took six lines of code and reducing it down to a single line of code. Abstraction of this nature will become of particular importance as you develop as a KSP developer.
 
 ### Congratulations
 

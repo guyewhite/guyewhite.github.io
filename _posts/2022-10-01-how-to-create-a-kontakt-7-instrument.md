@@ -6,7 +6,7 @@ categories: KONTAKT
 tags: kontakt7
 ---
 
-Welcome to the beautiful pursuit of building your own instruments, effects, and plugins in the Kontakt Script Language.
+Welcome to the beautiful pursuit of building your own instruments, effects, and plugins in the Kontakt Script Processor (KSP).
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ This tutorial requires a full version of Kontakt. Likely, Kontakt 5 or later is 
 
 ## Getting Started
 
-The Kontakt Script Language is a well-documented programming language with a thriving community behind it. As you get started, I recommend getting your hands on the following resources:
+The Kontakt Script Processor language is a well-documented programming language with a thriving community behind it. As you get started, I recommend getting your hands on the following resources:
 
 * Obtain the [Kontakt Script Language](https://www.native-instruments.com/forum/attachments/kontakt-script-language-pdf.86897/) development document. Ignore the age of this document or any references to Kontakt version numbers. It is masterfully written document that is exceedingly applicable today. This document provides a narrative introduction to the scripting language.
 * Obtain the [KSP Reference Manual](https://www.native-instruments.com/fileadmin/ni_media/downloads/manuals/kontakt/KONTAKT_602_KSP_Reference_Manual.pdf). As of time of this writing, the KSP Reference Manual discusses Kontakt 6. This is not a problem!
