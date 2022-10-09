@@ -20,7 +20,7 @@
 
   <title>
     
-      gelvinwhite &middot; A Jekyll theme
+      How to Create a Kontakt 7 Instrument (Part 3) - Switcheroo &middot; gelvinwhite
     
   </title>
 
@@ -83,12 +83,12 @@
     </div>
 
     <nav class="sidebar-nav">
-     <a class="sidebar-nav-item active" href="/">Home</a>
+     <a class="sidebar-nav-item" href="/">Home</a>
 
      <!-- Manual set order -->
-     <a class="sidebar-nav-item active" href="/categories">Categories</a>
-     <!-- <a class="sidebar-nav-item active" href="/projects">Projects</a> -->
-     <a class="sidebar-nav-item active" href="/about">About</a>
+     <a class="sidebar-nav-item" href="/categories">Categories</a>
+     <!-- <a class="sidebar-nav-item" href="/projects">Projects</a> -->
+     <a class="sidebar-nav-item" href="/about">About</a>
 
      
 <div id="social-media">
@@ -112,51 +112,10 @@
 
 
     <div class="content container">
-      <div id="archives">
-
-  <div class="archive-group">
-    
-    <div class="category-name"><div id="#KONTAKT"></div></div>
-    <p></p>
-
-    <div class="category-name">
-        <h2>KONTAKT</h2>
-    </div>
-    <a name="KONTAKT"></a>
-    
-    <article class="recent-posts">
-      <h4><a href="//kontakt/2022/10/02/how-to-create-a-kontakt-7-instrument-part-3/">How to Create a Kontakt 7 Instrument (Part 3) - Switcheroo </a></h4>
-    </article>
-
-    
-    <article class="recent-posts">
-      <h4><a href="//kontakt/2022/10/01/how-to-create-a-kontakt-7-instrument-part-2/">How to Create a Kontakt 7 Instrument (Part 2) - Push It! </a></h4>
-    </article>
-
-    
-    <article class="recent-posts">
-      <h4><a href="//kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument/">How to Create a Kontakt 7 Instrument (Part 1) - Hello World! </a></h4>
-    </article>
-
-    
-    <hr></hr>
-  </div>
-
-</div>
-
-<!--
-<div class="posts">
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/kontakt/2022/10/02/how-to-create-a-kontakt-7-instrument-part-3/">
-        How to Create a Kontakt 7 Instrument (Part 3) - Switcheroo
-      </a>
-    </h1>
-
-    <span class="post-date">02 Oct 2022</span>
-
-    <p>Welcome to the third installment of my multi-part series about how to engage in the beautiful pursuit of building your own instruments, effects, and plugins in the Kontakt Script Language.</p>
+      <div class="post">
+  <h1 class="post-title">How to Create a Kontakt 7 Instrument (Part 3) - Switcheroo</h1>
+  <!-- <span class="post-date">02 Oct 2022</span> -->
+  <p>Welcome to the third installment of my multi-part series about how to engage in the beautiful pursuit of building your own instruments, effects, and plugins in the Kontakt Script Language.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
@@ -715,262 +674,39 @@ end on
 
 <p><em>Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.</em></p>
 
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/kontakt/2022/10/01/how-to-create-a-kontakt-7-instrument-part-2/">
-        How to Create a Kontakt 7 Instrument (Part 2) - Push It!
-      </a>
-    </h1>
-
-    <span class="post-date">01 Oct 2022</span>
-
-    <p>Welcome to the second installment of my multi-part series about how to engage in the beautiful pursuit of building your own instruments, effects, and plugins in the Kontakt Script Language.</p>
-
-<h2 id="prerequisites">Prerequisites</h2>
-
-<p>This tutorial continues from the <a href="https://gelvinwhite.com/kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument/">first installment</a> of this multi-part series. So, if you have not followed the instructions there, best to backtrack and complete those steps. Further, this tutorial requires a full version of Kontakt. Likely, Kontakt 5 or later is fine. However, screenshots in this tutorial are of Kontakt 7.</p>
-
-<h2 id="getting-started">Getting Started</h2>
-
-<p>Continuing from where we left off, please ensure that the following starter code is in place in the scripting window:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-on init
-
-  message("Hello World!")
-
-end on
-```
-</code></pre></div></div>
-
-<p>Ensure that the script functions by clicking <code class="language-plaintext highlighter-rouge">Apply</code>. Upon clicking <code class="language-plaintext highlighter-rouge">Apply</code>, you should see <code class="language-plaintext highlighter-rouge">Hello World!</code> appearing in the status bar / console at the bottom of the screen.</p>
-
-<h3 id="step-one---creating-the-performance-view">Step One - Creating the Performance View</h3>
-
-<ul>
-  <li>
-    <p>To begin, we will create the <em>performance view</em> of the instrument. You can think of the performance view as the canvas upon which your buttons, dials, and other graphical elements will appear when someone is using the instrument. Modify your code as follows:</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>on init
-
-  {set the basics of the UI, setting the height at 213 and width at 720}
-	make_perfview
-	set_ui_height_px(213)
-	set_ui_width_px(633)
-
-end on
-</code></pre></div>    </div>
-    <p>Notice that <code class="language-plaintext highlighter-rouge">make_perfview</code> informs the compiler that there is a user interface that needs to be rendered to the user, even when they are not in the script editor. Without this line of code, your user interface will not be visible. Then, <code class="language-plaintext highlighter-rouge">set_ui_height_px</code> and <code class="language-plaintext highlighter-rouge">set_ui_width_px</code> tell the compiler the size of the performance view. As of Kontakt 7, the performance view is approximately 633px. Accordingly, anything wider than 633px will cause the window to resize. Anything less than 633px, at least on my computer, does not seem to render anything smaller than this baseline value.</p>
-
-    <p>Most important, notice the curly <code class="language-plaintext highlighter-rouge">{}</code> braces, which allows you to comment your code. Throughout your process of learning how to program, I highly advise keeping good notes about what your code does! After all, when you return later in a week, month, or year, it’s helpful to know what your code is doing.</p>
-  </li>
-  <li>
-    <p>To ensure that your script is functioning, hit <code class="language-plaintext highlighter-rouge">apply</code>. Then, click the wrench icon to switch to performance view. Your window should look like this:</p>
-
-    <p><img src="/assets/2022-10-02-how-to-create-a-kontakt-7-instrument-part-2/001.png" alt="kontakt wrench" title="kontakt wrench" />
-Note that if your screen does not look like the above, you probably did not click that wrench.</p>
-  </li>
-</ul>
-
-<h3 id="step-two---placing-your-first-button">Step Two - Placing Your First Button</h3>
-
-<ul>
-  <li>
-    <p>Next, let’s place your first button. Modify your code as follows:</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>on init
-
-	{set the basics of the UI, setting the height at 213 and width at 720}
-	make_perfview
-	set_ui_height_px(213)
-	set_ui_width_px(633)
-
-	{declare a variable called $switch that is tied to a button. Set that switch to on }
-	declare ui_switch $switch
-	$switch := 1
-
-	message("Hello World!")
-
-end on
-</code></pre></div>    </div>
-    <p>Notice that the <code class="language-plaintext highlighter-rouge">declare</code> command is used to create a variable called <code class="language-plaintext highlighter-rouge">switch</code>. This variable has a <code class="language-plaintext highlighter-rouge">$</code> sign in front of it, which tells us that this variable is an integer. Further, this variable called <code class="language-plaintext highlighter-rouge">switch</code> is tied to a button, signified by <code class="language-plaintext highlighter-rouge">ui_switch</code>. Then <code class="language-plaintext highlighter-rouge">$switch</code> is set to <code class="language-plaintext highlighter-rouge">1</code>. When a <code class="language-plaintext highlighter-rouge">ui_switch</code> has a value of <code class="language-plaintext highlighter-rouge">0</code> it is off. When it is <code class="language-plaintext highlighter-rouge">1</code> it is on.</p>
-  </li>
-  <li>
-    <p>Now, click the <code class="language-plaintext highlighter-rouge">Apply</code> button.</p>
-  </li>
-  <li>
-    <p>Upon clicking <code class="language-plaintext highlighter-rouge">Apply</code>, you should see the following:</p>
-
-    <p><img src="/assets/2022-10-02-how-to-create-a-kontakt-7-instrument-part-2/002.png" alt="kontakt switch" title="kontakt switch" /></p>
-  </li>
-  <li>
-    <p>Click on the button called <code class="language-plaintext highlighter-rouge">switch</code>. You’ll notice that in the <em>on</em> position it is lighter in color. In the <em>off</em> position, it is darker in color</p>
-  </li>
-</ul>
-
-<h3 id="step-three---making-the-button-interactive">Step Three - Making the Button Interactive</h3>
-
-<ul>
-  <li>
-    <p>Now, it’s time to learn a little about <em>callbacks</em>. A callback is a block of code that is executed at a specific time. For example, the <code class="language-plaintext highlighter-rouge">on init</code> callback is run each time the script is run. This callback is the first callback to be run, always. You can create multiple callbacks in your program. Modify your code as follows:</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{this always runs when the script starts}
-on init
-
-	{set the basics of the UI, setting the height at 213 and width at 720}
-	make_perfview
-	set_ui_height_px(213)
-	set_ui_width_px(633)
-
-	{declare a variable called $switch that is tied to a button. Set that switch to on }
-	declare ui_switch $switch
-	$switch := 1
-
-end on
-
-{this runs when the ui_control called $switch is changed}
-on ui_control($switch)
-
-  if($switch = 1)
-    message("it's on!")
-  else
-    message("it's off!")
-  end if
-end on
-</code></pre></div>    </div>
-    <p>Notice that a new callback called <code class="language-plaintext highlighter-rouge">ui_control($switch)</code> is included. When <code class="language-plaintext highlighter-rouge">$switch1</code> is manipulated, this callback is called. Notice that the value of <code class="language-plaintext highlighter-rouge">$switch1</code> is passed to this callback using the <code class="language-plaintext highlighter-rouge">()</code> parentheses. Then, inside the callback, the <code class="language-plaintext highlighter-rouge">if</code> statement makes a decision. If <code class="language-plaintext highlighter-rouge">$switch = 1</code> or <em>on</em>, then <code class="language-plaintext highlighter-rouge">it's on!</code> is messaged in the console. Otherwise, <code class="language-plaintext highlighter-rouge">it's off</code> is messaged.</p>
-  </li>
-  <li>
-    <p>Click “Apply” and play with the button. Notice what is displayed in the console.</p>
-
-    <p><img src="/assets/2022-10-02-how-to-create-a-kontakt-7-instrument-part-2/003.png" alt="kontakt console" title="kontakt console" /></p>
-  </li>
-</ul>
-
-<h3 id="congratulations">Congratulations</h3>
-
-<p>You have now created your first interactive button!</p>
-
-<p>The tutorial to follow will discuss the placement of buttons within the performance view.</p>
-
-<p><em>Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.</em></p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument/">
-        How to Create a Kontakt 7 Instrument (Part 1) - Hello World!
-      </a>
-    </h1>
-
-    <span class="post-date">30 Sep 2022</span>
-
-    <p>Welcome to the beautiful pursuit of building your own instruments, effects, and plugins in the Kontakt Script Language.</p>
-
-<h2 id="prerequisites">Prerequisites</h2>
-
-<p>This tutorial requires a full version of Kontakt. Likely, Kontakt 5 or later is fine. However, screenshots in this tutorial are of Kontakt 7.</p>
-
-<h2 id="getting-started">Getting Started</h2>
-
-<p>The Kontakt Script Language is a well-documented programming language with a thriving community behind it. As you get started, I recommend getting your hands on the following resources:</p>
-
-<ul>
-  <li>Obtain the <a href="https://www.native-instruments.com/forum/attachments/kontakt-script-language-pdf.86897/">Kontakt Script Language</a> development document. Ignore the age of this document or any references to Kontakt version numbers. It is masterfully written document that is exceedingly applicable today. This document provides a narrative introduction to the scripting language.</li>
-  <li>Obtain the <a href="https://www.native-instruments.com/fileadmin/ni_media/downloads/manuals/kontakt/KONTAKT_602_KSP_Reference_Manual.pdf">KSP Reference Manual</a>. As of time of this writing, the KSP Reference Manual discusses Kontakt 6. This is not a problem!</li>
-  <li>Join the <a href="https://www.native-instruments.com/en/community/">Native Instruments Community</a>.</li>
-  <li>Join the <a href="https://discord.com/invite/rTpCcpg">NI Kontakt Discord</a></li>
-</ul>
-
-<h3 id="step-one---find-the-scripting-environment">Step One - Find the Scripting Environment.</h3>
-
-<ul>
-  <li>
-    <p>Open your full version of Kontakt. Likely, you will see a screen like this:</p>
-
-    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/001.png" alt="kontakt splash screen with many libraries" title="kontakt splash screen" /></p>
-  </li>
-  <li>
-    <p>Next, click the file icon and then select <code class="language-plaintext highlighter-rouge">New instrument</code>.</p>
-
-    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/002.png" alt="kontakt splash screen with menu open creating new instrument" title="kontakt new instrument" /></p>
-  </li>
-  <li>
-    <p>Next, click the wrench <code class="language-plaintext highlighter-rouge">edit mode</code> icon.</p>
-
-    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/003.png" alt="kontakt interface with the wrench" title="kontakt edit mode" /></p>
-  </li>
-  <li>
-    <p>Next, click the <code class="language-plaintext highlighter-rouge">Script Editor</code> button.</p>
-
-    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/004.png" alt="kontakt opening script editor" title="kontakt opening script editor" /></p>
-  </li>
-  <li>
-    <p>Finally, click the <code class="language-plaintext highlighter-rouge">Edit</code> button.</p>
-
-    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/005.png" alt="kontakt edit button" title="kontakt edit button" /></p>
-  </li>
-  <li>
-    <p>You are now in the Script Editor. Congrats!</p>
-
-    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/006.png" alt="kontakt script editor" title="kontakt script editor" /></p>
-  </li>
-</ul>
-
-<h3 id="step-two---hello-world">Step Two - Hello World!</h3>
-
-<ul>
-  <li>Copy and paste the following code into the Script Editor window.</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  on init
-
-  	message("Hello World!")
-
-  end on
-</code></pre></div></div>
-
-<ul>
-  <li>
-    <p>Now, click the <code class="language-plaintext highlighter-rouge">Apply</code> button.</p>
-  </li>
-  <li>
-    <p>Upon clicking <code class="language-plaintext highlighter-rouge">Apply</code>, you should see <code class="language-plaintext highlighter-rouge">Hello World!</code> appearing in the status bar / console at the bottom of the screen.</p>
-
-    <p><img src="/assets/2022-10-01-how-to-create-a-kontakt-7-instrument/007.png" alt="kontakt hello world" title="kontakt hello world" /></p>
-  </li>
-</ul>
-
-<h3 id="step-three---analyzing-the-script">Step Three - Analyzing the Script</h3>
-
-<p>The block of code from <code class="language-plaintext highlighter-rouge">on init</code> to <code class="language-plaintext highlighter-rouge">end on</code> is always run first by the script compiler. Anything that you put in this block of code will run!</p>
-
-<p>The <code class="language-plaintext highlighter-rouge">message("Hello World!")</code> statement tells the compiler to output <code class="language-plaintext highlighter-rouge">Hello World!</code> into the console. You can change this message within the quotes to say anything you like. In future projects, you will find it exceptionally useful to be able to output to the console – such that you can provide yourself clues about what is happening in your code. This <code class="language-plaintext highlighter-rouge">message</code> function will be an invaluable tool you will use in the future to catch and understand bugs in your script.</p>
-
-<h3 id="congratulations">Congratulations</h3>
-
-<p>You have now created your first Kontakt script!</p>
-
-<p>The tutorial to follow will discuss adding buttons to your interface.</p>
-
-<p><em>Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.</em></p>
-
-  </div>
-  
 </div>
 
-<div class="pagination">
-  
-    <span class="pagination-item older">Older</span>
-  
-  
-    <span class="pagination-item newer">Newer</span>
-  
+<span class="post-tags">
+    
+      
+      <a class="no-underline" href="/tag/kontakt7"><code class="highligher-rouge"><nobr>kontakt7</nobr></code>&nbsp;</a>
+    
+</span>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/kontakt/2022/10/01/how-to-create-a-kontakt-7-instrument-part-2/">
+            How to Create a Kontakt 7 Instrument (Part 2) - Push It!
+            <small>01 Oct 2022</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument/">
+            How to Create a Kontakt 7 Instrument (Part 1) - Hello World!
+            <small>30 Sep 2022</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
 </div>
--->
 
     </div>
 
