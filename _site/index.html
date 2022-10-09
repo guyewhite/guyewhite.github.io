@@ -160,7 +160,7 @@
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-<p>This tutorial continues from the <a href="https://gelvinwhite.com/kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument-part-2/">second installment</a> of this multi-part series. So, if you have not followed the instructions in our previous installments, best to backtrack and complete those steps. Further, this tutorial requires a full version of Kontakt. Likely, Kontakt 5 or later is fine. However, screenshots in this tutorial are of Kontakt 7.</p>
+<p>This tutorial continues from the <a href="https://gelvinwhite.com/kontakt/2022/10/01/how-to-create-a-kontakt-7-instrument-part-2/">second installment</a> of this multi-part series. So, if you have not followed the instructions in our previous installments, best to backtrack and complete those steps. Further, this tutorial requires a full version of Kontakt. Likely, Kontakt 5 or later is fine. However, screenshots in this tutorial are of Kontakt 7.</p>
 
 <h2 id="getting-started">Getting Started</h2>
 
@@ -227,7 +227,7 @@ end on
 </code></pre></div>    </div>
     <p>Notice that all references to <code class="language-plaintext highlighter-rouge">switch</code> have been changed to <code class="language-plaintext highlighter-rouge">run</code>, effectively renaming this button.</p>
   </li>
-  <li>To ensure that your script is functioning, hit <code class="language-plaintext highlighter-rouge">apply</code>. The code should function as it did prior.</li>
+  <li>To ensure that your script is functioning, hit <code class="language-plaintext highlighter-rouge">Apply</code>. The code should function as it did prior.</li>
   <li>
     <p>Second, let’s add three other buttons as well. Modify your code as follows:</p>
 
@@ -257,7 +257,7 @@ on init
   $option2Id := get_ui_id($option2)
   set_control_par_str($option2Id, $CONTROL_PAR_TEXT, "B")
 
-  {declare another button called $option3 that is tied to a button. The intial value is set to off}
+  {declare another button called $option3 that is tied to a button. The initial value is set to off}
   declare ui_switch $option3
   $option3 := 0
   declare $option3Id
@@ -278,7 +278,7 @@ end on
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Let’s discect this code a bit. Notice that a new button is added with the following code:</p>
+    <p>Let’s dissect this code a bit. Notice that a new button is added with the following code:</p>
 
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{declare another button called $option1 that is tied to a button. The initial value is set to on}
 declare ui_switch $option1
@@ -287,7 +287,7 @@ declare $option1Id
 $option1Id := get_ui_id($option1)
 set_control_par_str($option1Id, $CONTROL_PAR_TEXT, "A")
 </code></pre></div>    </div>
-    <p>Notice that the first line <code class="language-plaintext highlighter-rouge">declare ui_switch $option1</code> is the same code that created the <code class="language-plaintext highlighter-rouge">run</code> button, simply changed to address <code class="language-plaintext highlighter-rouge">option1</code>. Second, <code class="language-plaintext highlighter-rouge">$option1 := 1</code> sets the switch’s intial value to <code class="language-plaintext highlighter-rouge">1</code> or <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">on</code>. Next, <code class="language-plaintext highlighter-rouge">declare $option1Id</code> declares a new variable that we will use to keep track of the unique ID that the compiler will use to keep track of this new switch. Every switch will have a unique ID assigned to it by the compiler. The line <code class="language-plaintext highlighter-rouge">$option1Id := get_ui_id($option1)</code> asks the compiler to tell us what the unique ID is for <code class="language-plaintext highlighter-rouge">$option1</code>. This value is stored in the <code class="language-plaintext highlighter-rouge">$option1Id</code> variable so it can be used later. The final line <code class="language-plaintext highlighter-rouge">set_control_par_str($option1Id, $CONTROL_PAR_TEXT, "A")</code> simply tells the compiler what text should be displayed inside this switch. This code is repeated for both <code class="language-plaintext highlighter-rouge">$option2</code> and <code class="language-plaintext highlighter-rouge">$option3</code>, changing the values accordingly.</p>
+    <p>Notice that the first line <code class="language-plaintext highlighter-rouge">declare ui_switch $option1</code> is the same code that created the <code class="language-plaintext highlighter-rouge">run</code> button, simply changed to address <code class="language-plaintext highlighter-rouge">option1</code>. Second, <code class="language-plaintext highlighter-rouge">$option1 := 1</code> sets the switch’s initial value to <code class="language-plaintext highlighter-rouge">1</code> or <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">on</code>. Next, <code class="language-plaintext highlighter-rouge">declare $option1Id</code> declares a new variable that we will use to keep track of the unique ID that the compiler will use to keep track of this new switch. Every switch will have a unique ID assigned to it by the compiler. The line <code class="language-plaintext highlighter-rouge">\$option1Id := get_ui_id(\$option1)</code> asks the compiler to tell us what the unique ID is for <code class="language-plaintext highlighter-rouge">$option1</code>. This value is stored in the <code class="language-plaintext highlighter-rouge">$option1Id</code> variable so it can be used later. The final line <code class="language-plaintext highlighter-rouge">set_control_par_str(\$option1Id, \$CONTROL_PAR_TEXT, "A")</code> simply tells the compiler what text should be displayed inside this switch. This code is repeated for both <code class="language-plaintext highlighter-rouge">$option2</code> and <code class="language-plaintext highlighter-rouge">$option3</code>, changing the values accordingly.</p>
   </li>
   <li>Make sure your code functions by clicking the <code class="language-plaintext highlighter-rouge">Apply</code> button and testing out the buttons.</li>
 </ul>
@@ -296,7 +296,7 @@ set_control_par_str($option1Id, $CONTROL_PAR_TEXT, "A")
 
 <ul>
   <li>
-    <p>It’s possible to make the buttons react to one another. From this point forward in the tutorial, I will refer to each button by the text that appears within them. In this case, we want to make it so <code class="language-plaintext highlighter-rouge">A</code>, <code class="language-plaintext highlighter-rouge">B</code>, and <code class="language-plaintext highlighter-rouge">C</code> cannot be selected at the same time. For example, if <code class="language-plaintext highlighter-rouge">B</code> is selected, <code class="language-plaintext highlighter-rouge">A</code> and <code class="language-plaintext highlighter-rouge">C</code> should automatically turn themselves the off position. This can be accomplished through the <code class="language-plaintext highlighter-rouge">on ui_control</code> callback. Modify your code as follows. Specifically, notice the new callbacks added to the end of the code:</p>
+    <p>It’s possible to make the buttons react to one another. From this point forward in the tutorial, I will refer to each button by the text that appears within them. In this case, we want to make it so <code class="language-plaintext highlighter-rouge">A</code>, <code class="language-plaintext highlighter-rouge">B</code>, and <code class="language-plaintext highlighter-rouge">C</code> cannot be selected at the same time. For example, if <code class="language-plaintext highlighter-rouge">B</code> is selected, <code class="language-plaintext highlighter-rouge">A</code> and <code class="language-plaintext highlighter-rouge">C</code> should automatically turn themselves to the off position. This can be accomplished through the <code class="language-plaintext highlighter-rouge">on ui_control</code> callback. Modify your code as follows. Specifically, notice the new callbacks added to the end of the code:</p>
 
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{this always runs when the script starts}
 on init
@@ -324,7 +324,7 @@ on init
   $option2Id := get_ui_id($option2)
   set_control_par_str($option2Id, $CONTROL_PAR_TEXT, "B")
 
-  {declare another button called $option3 that is tied to a button. The intial value is set to off}
+  {declare another button called $option3 that is tied to a button. The initial value is set to off}
   declare ui_switch $option3
   $option3 := 0
   declare $option3Id
@@ -399,9 +399,9 @@ end on
 <h3 id="step-three---the-state-of-things">Step Three - The State of Things</h3>
 
 <ul>
-  <li>Now, all of all of our buttons are in place for our first Kontakt instrument. We are almost to the point where our script can start doing things musically interesting. To prepare for musical magic, we have some final edits to complete.</li>
+  <li>Now, all of our buttons are in place for our first Kontakt instrument. We are almost to the point where our script can start doing things musically interesting. To prepare for musical magic, we have some final edits to complete.</li>
   <li>
-    <p>First, let’s modify the initial value of <code class="language-plaintext highlighter-rouge">$run</code>. Up until this point, by default it has been set to the <code class="language-plaintext highlighter-rouge">on</code> position. Modify you code in <code class="language-plaintext highlighter-rouge">on init</code> as follows:</p>
+    <p>First, let’s modify the initial value of <code class="language-plaintext highlighter-rouge">$run</code>. Up until this point, by default it has been set to the <code class="language-plaintext highlighter-rouge">on</code> position. Modify your code in <code class="language-plaintext highlighter-rouge">on init</code> as follows:</p>
 
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$run := 0
 </code></pre></div>    </div>
@@ -433,7 +433,7 @@ end on
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Fourth, let’s make it so the <code class="language-plaintext highlighter-rouge">run</code> button is set to <code class="language-plaintext highlighter-rouge">off</code> every time the <code class="language-plaintext highlighter-rouge">A</code>, <code class="language-plaintext highlighter-rouge">B</code> or <code class="language-plaintext highlighter-rouge">C</code> option is changed. Ineach of our <code class="language-plaintext highlighter-rouge">on ui_control ($option)</code> callbacks, we will add another line that turns off <code class="language-plaintext highlighter-rouge">run</code>. For example, for <code class="language-plaintext highlighter-rouge">on ui_control ($option1)</code> we will modify the code as follows:</p>
+    <p>Fourth, let’s make it so the <code class="language-plaintext highlighter-rouge">run</code> button is set to <code class="language-plaintext highlighter-rouge">off</code> every time the <code class="language-plaintext highlighter-rouge">A</code>, <code class="language-plaintext highlighter-rouge">B</code> or <code class="language-plaintext highlighter-rouge">C</code> option is changed. In each of our <code class="language-plaintext highlighter-rouge">on ui_control($option)</code> callbacks, we will add another line that turns off <code class="language-plaintext highlighter-rouge">run</code>. For example, for <code class="language-plaintext highlighter-rouge">on ui_control ($option1)</code> we will modify the code as follows:</p>
 
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{this runs when the ui_control called $option1 is changed}
 on ui_control ($option1)
@@ -466,7 +466,7 @@ on ui_control($run)
   end if
 end on
 </code></pre></div>    </div>
-    <p>Notice that when the the <code class="language-plaintext highlighter-rouge">run</code> button is pressed, it places a message in the console that echos the state that is running, whether <code class="language-plaintext highlighter-rouge">A</code>, <code class="language-plaintext highlighter-rouge">B</code>, or <code class="language-plaintext highlighter-rouge">C</code>. Otherwise, the console messages <code class="language-plaintext highlighter-rouge">Ready to run</code>.</p>
+    <p>Notice that when the <code class="language-plaintext highlighter-rouge">run</code> button is pressed, it places a message in the console that echos the state that is running, whether <code class="language-plaintext highlighter-rouge">A</code>, <code class="language-plaintext highlighter-rouge">B</code>, or <code class="language-plaintext highlighter-rouge">C</code>. Otherwise, the console messages <code class="language-plaintext highlighter-rouge">Ready to run</code>.</p>
   </li>
   <li>
     <p>A measure of consistency, let’s add a <code class="language-plaintext highlighter-rouge">message("Ready to run")</code> in the <code class="language-plaintext highlighter-rouge">on init</code> function such that there is always something displaying in the console. Notice how the console provides us important feedback as the programmer, such that we can understand what’s happening inside of our program. Your final code for this step should be the following:</p>
@@ -498,7 +498,7 @@ on init
   $option2Id := get_ui_id($option2)
   set_control_par_str($option2Id, $CONTROL_PAR_TEXT, "B")
 
-  {declare another button called $option3 that is tied to a button. The intial value is set to off}
+  {declare another button called $option3 that is tied to a button. The initial value is set to off}
   declare ui_switch $option3
   $option3 := 0
   declare $option3Id
@@ -580,7 +580,7 @@ end on
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$run := 0
 message("Ready to run")
 </code></pre></div>    </div>
-    <p>This code appears no less than four places currently.</p>
+    <p>This code appears in no less than four places currently.</p>
   </li>
   <li>
     <p>It’s generally considered bad design to repeat the same code time and time again where a line of code could be employed in place of the repeats. Immediately after the <code class="language-plaintext highlighter-rouge">on init</code> callback, after <code class="language-plaintext highlighter-rouge">end on</code>, add the following:</p>
@@ -624,7 +624,7 @@ on init
   $option2Id := get_ui_id($option2)
   set_control_par_str($option2Id, $CONTROL_PAR_TEXT, "B")
 
-  {declare another button called $option3 that is tied to a button. The intial value is set to off}
+  {declare another button called $option3 that is tied to a button. The initial value is set to off}
   declare ui_switch $option3
   $option3 := 0
   declare $option3Id
@@ -703,7 +703,7 @@ on ui_control ($option3)
 
 end on
 </code></pre></div>    </div>
-    <p>Notice how the function called <code class="language-plaintext highlighter-rouge">resetRun</code> must appear above those callbacks that utilize this function. Through the utilization of this function, we are <em>abstracting away</em> or simplifying, our code by taking a task that took six lines of code and reduced it down to a single line of code. Abstraction of this nature will become of particular importance as you develop as a Kontakt Script Language developer.</p>
+    <p>Notice how the function called <code class="language-plaintext highlighter-rouge">resetRun</code> must appear above those callbacks that utilize this function. Through the utilization of this function, we are <em>abstracting away</em>, or simplifying, our code by taking a task that took six lines of code and reducing it down to a single line of code. Abstraction of this nature will become of particular importance as you develop as a Kontakt Script Language developer.</p>
   </li>
 </ul>
 
@@ -711,7 +711,7 @@ end on
 
 <p>You have now finalized the physical interface of your first Kontakt instrument. It could be tempting to get lured in by graphical interfaces, prototyping backgrounds and button layouts in specialized software. However, my recommendation is to keep things simple for the time being. Focus on function over aesthetics for a short while.</p>
 
-<p>The tutorial to follow will allow you to <em>finally</em> produce something musically intresting.</p>
+<p>The tutorial to follow will allow you to <em>finally</em> produce something musically interesting.</p>
 
 <p><em>Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.</em></p>
 
