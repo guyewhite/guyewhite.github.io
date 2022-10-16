@@ -13,6 +13,6 @@ I teach in at a well-known university in a well-known computer science course. I
   I write code 💻 and build software-based generative 🎲 ecosystems to create music ♬.
 </p>
 
-My primary contributions are in the form of Native Instruments®️ Kontakt®️ Libraries and in step-by-step instruction for programming Native Instruments®️ Kontakt®️ Libraries.
+My primary contributions are in the form of Native Instruments®️ Kontakt®️ Scripts and in step-by-step instruction for programming Native Instruments®️ Kontakt®️ Libraries.
 
 *Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.*
