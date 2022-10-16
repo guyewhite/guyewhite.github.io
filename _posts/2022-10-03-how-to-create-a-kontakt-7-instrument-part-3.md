@@ -553,4 +553,6 @@ You have now finalized the physical interface of your first Kontakt instrument. 
 
 The tutorial to follow will allow you to *finally* produce something musically interesting.
 
+Copyright © 2022 THI. All rights reserved. gelvinwhite.com is operated by THI.
+
 *Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.*

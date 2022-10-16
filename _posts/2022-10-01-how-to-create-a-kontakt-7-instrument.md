@@ -77,4 +77,6 @@ You have now created your first Kontakt script!
 
 The tutorial to follow will discuss adding buttons to your interface.
 
+Copyright © 2022 THI. All rights reserved. gelvinwhite.com is operated by THI.
+
 *Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.*

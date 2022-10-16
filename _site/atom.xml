@@ -4,7 +4,7 @@
  <title>gelvinwhite</title>
  <link href="gelvinwhite.com/atom.xml" rel="self"/>
  <link href="gelvinwhite.com/"/>
- <updated>2022-10-16T09:28:09-07:00</updated>
+ <updated>2022-10-16T09:58:15-07:00</updated>
  <id>gelvinwhite.com</id>
  <author>
    <name>G. Elvin White</name>
@@ -141,7 +141,7 @@ end on
 &lt;h3 id=&quot;step-one---building-scales&quot;&gt;Step One - Building Scales&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Generally speaking, &lt;em&gt;arrays&lt;/em&gt; are contiguous, back-to-back, areas of memory where a series of numbers, letters, or other data types are stored.&lt;/li&gt;
+  &lt;li&gt;Generally speaking, &lt;em&gt;arrays&lt;/em&gt; are contiguous, back-to-back areas of memory where a series of numbers, letters, or other data types are stored.&lt;/li&gt;
   &lt;li&gt;KSP offers array types for integers, real numbers, and strings.&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;For example, consider the following &lt;em&gt;integer array&lt;/em&gt;:&lt;/p&gt;
@@ -149,10 +149,10 @@ end on
     &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{this is an integer array}
 declare %myArray[4] := (0,1,2,3)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;Notice that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;declare&lt;/code&gt; statement creates an array of type integer, signified by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt; symbol. The number of elements allowed in this array are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt;. Then, the values for each of those four locations are assigned. So, the &lt;em&gt;zeroth&lt;/em&gt; spot contains the value &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;myArray&lt;/code&gt; of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; (the second location of the array) contains an integer &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;myArray&lt;/code&gt; of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; (the third location of the array) contains an integer &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt;. The last location of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;myArray&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;myArray&lt;/code&gt; of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3&lt;/code&gt;, which contains a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3&lt;/code&gt;.&lt;/p&gt;
+    &lt;p&gt;Notice that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;declare&lt;/code&gt; statement creates an array of type integer, signified by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt; symbol. The number of elements allowed in this array is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt;. Then, the values for each of those four locations are assigned. So, the &lt;em&gt;zeroth&lt;/em&gt; spot contains the value &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;myArray&lt;/code&gt; of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; (the second location of the array) contains an integer &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;myArray&lt;/code&gt; of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; (the third location of the array) contains an integer &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt;. The last location of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;myArray&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;myArray&lt;/code&gt; of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3&lt;/code&gt;, which contains a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3&lt;/code&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Arrays are &lt;em&gt;zero-indexed&lt;/em&gt;, in that we start counting the locations in the array starting at zero. This comports with most programming languages that count starting at zero. For example, consider this second array:&lt;/p&gt;
+    &lt;p&gt;Arrays are &lt;em&gt;zero-indexed&lt;/em&gt; in that we start counting the locations in the array starting at zero. This comports with most programming languages that count starting at zero. For example, consider this second array:&lt;/p&gt;
 
     &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{this is another integer array}
 declare %myOtherArray[3] := (52,65,44)
@@ -168,7 +168,7 @@ declare %cMajorScale[8] := (60,62,64,65,67,69,71,72)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;p&gt;Notice that this array of integers has eight locations where one could store values. Then, eight values are assigned to these positions. The zeroth value is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;60&lt;/code&gt;. The last value in the array is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;72&lt;/code&gt;.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Midi notes are assigned specific integer values by industry standard. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;60&lt;/code&gt; is designated as a middle C (C3). &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;62&lt;/code&gt; is designated as the D above middle C (D3). Accordingly, the array you just added to your code essentially holds the values of the C major scale. You can obtain a midi note chart simply by Googling “midi note chart”.&lt;/li&gt;
+  &lt;li&gt;Midi notes are assigned specific integer values by industry standards. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;60&lt;/code&gt; is designated as a middle C (C3). &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;62&lt;/code&gt; is designated as the D above middle C (D3). Accordingly, the array you just added to your code essentially holds the values of the C major scale. You can obtain a midi note chart simply by Googling “midi note chart”.&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Under the code you just added, also add the line &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;declare $count := 0&lt;/code&gt; as follows:&lt;/p&gt;
 
@@ -217,7 +217,7 @@ end while
 
 end function
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;Notice how this function, called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;play&lt;/code&gt;, will first enter a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;while&lt;/code&gt; loop. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;loop&lt;/code&gt; will check to see if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;count&lt;/code&gt; is less than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8&lt;/code&gt;. If so, it will message the console the current note being played in midi notation. Since, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%cMajorScale[0]&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;60&lt;/code&gt; this will cause &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;60&lt;/code&gt; to appear in the console. Then, the next line of code engages the midi engine to play a note. In this initial case, it plays the note &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;60&lt;/code&gt; or C3. It plays it at velocity &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;127&lt;/code&gt;, with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; sample offset (more on that later), for length 2000000 or 2 seconds. Then, the script engine waits for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2000000&lt;/code&gt; microseconds or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; seconds. Finally, the count is increased. Next time through the loop, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%cMajorScale[1]&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;62&lt;/code&gt; is played. This is a D3 note. This repeats until the scale is done. In the end, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;count&lt;/code&gt; is reset to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;.&lt;/p&gt;
+    &lt;p&gt;Notice how this function, called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;play&lt;/code&gt;, will first enter a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;while&lt;/code&gt; loop. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;loop&lt;/code&gt; will check to see if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;count&lt;/code&gt; is less than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8&lt;/code&gt;. If so, it will message the console the current note being played in midi notation. Since &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%cMajorScale[0]&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;60&lt;/code&gt; this will cause &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;60&lt;/code&gt; to appear in the console. Then, the next line of code engages the midi engine to play a note. In this initial case, it plays note &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;60&lt;/code&gt; or C3. It plays it at velocity &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;127&lt;/code&gt;, with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; sample offset (more on that later), for length &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2000000&lt;/code&gt; microseconds or 2 seconds. Then, the script engine waits for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2000000&lt;/code&gt; microseconds or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; seconds. Finally, the count is increased. Next time through the loop, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%cMajorScale[1]&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;62&lt;/code&gt; is played. This is a D3 note. This repeats until the scale is done. In the end, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;count&lt;/code&gt; is reset to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Finally, we need to tell the script processor to run this &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;play&lt;/code&gt; function when the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;run&lt;/code&gt; button is pressed. Accordingly, in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;on ui_control($run)&lt;/code&gt; callback, modify its contents to be the following:&lt;/p&gt;
@@ -233,8 +233,132 @@ end on
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;p&gt;Notice that this function simply executes the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;play&lt;/code&gt; callback. Then, it resets itself to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;off&lt;/code&gt; position.&lt;/p&gt;
   &lt;/li&gt;
+  &lt;li&gt;Your program is ready to run some midi to your DAW!&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Your program is ready to run some midi to your DAW!&lt;/p&gt;
+    &lt;p&gt;As a final check, your final code should appear as follows:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{this always runs when the script starts}
+on init
+
+  {set the basics of the UI, setting the height at 213 and width at 720}
+  make_perfview
+  set_ui_height_px(213)
+  set_ui_width_px(633)
+
+  {declare a variable called $run that is tied to a button. Set that button to off }
+  declare ui_switch $run
+  $run := 0
+  message(&quot;Ready to run&quot;)
+
+  {declare another button called $option1 that is tied to a button. The initial value is set to on}
+  declare ui_switch $option1
+  $option1 := 1
+  declare $option1Id
+  $option1Id := get_ui_id($option1)
+  set_control_par_str($option1Id, $CONTROL_PAR_TEXT, &quot;A&quot;)
+
+  {declare another button called $option2 that is tied to a button. The initial value is set to off}
+  declare ui_switch $option2
+  $option2 := 0
+  declare $option2Id
+  $option2Id := get_ui_id($option2)
+  set_control_par_str($option2Id, $CONTROL_PAR_TEXT, &quot;B&quot;)
+
+  {declare another button called $option3 that is tied to a button. The initial value is set to off}
+  declare ui_switch $option3
+  $option3 := 0
+  declare $option3Id
+  $option3Id := get_ui_id($option3)
+  set_control_par_str($option3Id, $CONTROL_PAR_TEXT, &quot;C&quot;)
+
+  {set initial instrument state value}
+  declare @state
+  @state := &quot;A&quot;
+
+  {c major scale in midi notes}
+  declare %cMajorScale[8] := (60,62,64,65,67,69,71,72)
+  declare $count := 0
+
+end on
+
+{creates a function that resets the values of run}
+function resetRun()
+
+  $run := 0
+  message(&quot;Ready to run&quot;)
+
+end function
+
+function play()
+
+  while ($count &amp;lt; 8)
+    message(&quot;Note # &quot; &amp;amp; %cMajorScale[$count])
+    play_note(%cMajorScale[$count],127,0,2000000)
+    wait(2000000)
+    inc ($count)
+  end while
+
+  $count := 0
+
+end function
+
+{this runs when the ui_control called $run is changed}
+on ui_control($run)
+
+  call play()
+
+  {always set the run button back to its original state}
+  $run := 0
+end on
+
+{this runs when the ui_control called $option1 is changed}
+on ui_control ($option1)
+
+  $option1 := 1
+
+  {toggle the other buttons off}
+  $option2 := 0
+  $option3 := 0
+
+  {reset the run button}
+  call resetRun()
+
+  @state := &quot;A&quot;
+
+end on
+
+{this runs when the ui_control called $option2 is changed}
+on ui_control ($option2)
+
+  $option2 := 1
+
+  {toggle the other buttons off}
+  $option1 := 0
+  $option3 := 0
+
+  {reset the run button}
+  call resetRun()
+
+  @state := &quot;B&quot;
+
+end on
+
+{this runs when the ui_control called $option3 is changed}
+on ui_control ($option3)
+
+  $option3 := 1
+
+  {toggle the other buttons off}
+  $option1 := 0
+  $option2 := 0
+
+  {reset the run button}
+  call resetRun()
+
+  @state := &quot;C&quot;
+
+end on
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -257,10 +381,10 @@ end on
     &lt;p&gt;Within Ableton Live, this is relatively easy. First, load Kontakt with your script onto a MIDI track. Second, load a MIDI instrument of your choosing into a second track. Finally, modify the track routing as follows:&lt;/p&gt;
 
     &lt;p&gt;&lt;img src=&quot;/assets/2022-10-15-how-to-create-a-kontakt-7-instrument-part-4/003.png&quot; alt=&quot;two ableton live tracks set to record monitoring midi&quot; title=&quot;ableton live tracks&quot; /&gt;
-Notice that the left hand track, which is currently assigned Kontakt with our script loaded, is set to monitor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;All Ins&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Monitor&lt;/code&gt; is set to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;In&lt;/code&gt;. The right hand track, assigned to a midi instrument of our choosing (I try to use a simple piano for development), is set to get &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MIDI From&lt;/code&gt; our first track. Both the top and bottom dropdowns are set to monitor the first track. Finally, and most importantly in Ableton Live, both tracks are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;record enabled&lt;/code&gt;.&lt;/p&gt;
+Notice that the left-hand track, which is currently assigned Kontakt with our script loaded, is set to monitor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;All Ins&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Monitor&lt;/code&gt; is set to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;In&lt;/code&gt;. The right-hand track, assigned to a midi instrument of our choosing (I try to use a simple piano for development), is set to get &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MIDI From&lt;/code&gt; our first track. Both the top and bottom dropdowns are set to monitor the first track. Finally, and most importantly, in Ableton Live, both tracks are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;record enabled&lt;/code&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;If you are a Logic user, you will need to run Kontakt in the stand-alone application. With the stand-alone application running, with your script copied in, you will go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Options &amp;gt; MIDI &amp;gt; Outputs&lt;/code&gt; and ensure that ‘Kontakt X Virtual Instrument’. Once you have a virtual instrument loaded within Logic, it will &lt;em&gt;likely&lt;/em&gt; play the resulting MIDI.&lt;/p&gt;
+    &lt;p&gt;If you are a Logic user, you will need to run Kontakt in the stand-alone application. With the stand-alone application running, with your script copied in, you will go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Options &amp;gt; MIDI &amp;gt; Outputs&lt;/code&gt; and ensure that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Kontakt X Virtual Instrument&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;on&lt;/code&gt;. Once you have a virtual instrument loaded within Logic, it will &lt;em&gt;likely&lt;/em&gt; play the resulting MIDI.&lt;/p&gt;
 
     &lt;p&gt;&lt;img src=&quot;/assets/2022-10-15-how-to-create-a-kontakt-7-instrument-part-4/004.png&quot; alt=&quot;kontakt panel with midi options selected&quot; title=&quot;kontakt midi settings&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
@@ -269,6 +393,8 @@ Notice that the left hand track, which is currently assigned Kontakt with our sc
 &lt;h3 id=&quot;congratulations&quot;&gt;Congratulations&lt;/h3&gt;
 
 &lt;p&gt;You have now worked with MIDI for the first time in your project. In our next iteration of this series, we will be adding further possibilities for midi generation.&lt;/p&gt;
+
+&lt;p&gt;Copyright © 2022 THI. All rights reserved. gelvinwhite.com is operated by THI.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.&lt;/em&gt;&lt;/p&gt;
 </content>
@@ -840,6 +966,8 @@ end on
 
 &lt;p&gt;The tutorial to follow will allow you to &lt;em&gt;finally&lt;/em&gt; produce something musically interesting.&lt;/p&gt;
 
+&lt;p&gt;Copyright © 2022 THI. All rights reserved. gelvinwhite.com is operated by THI.&lt;/p&gt;
+
 &lt;p&gt;&lt;em&gt;Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.&lt;/em&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -978,6 +1106,8 @@ end on
 
 &lt;p&gt;The tutorial to follow will discuss the placement of buttons within the performance view.&lt;/p&gt;
 
+&lt;p&gt;Copyright © 2022 THI. All rights reserved. gelvinwhite.com is operated by THI.&lt;/p&gt;
+
 &lt;p&gt;&lt;em&gt;Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.&lt;/em&gt;&lt;/p&gt;
 </content>
  </entry>
@@ -1074,6 +1204,8 @@ end on
 &lt;p&gt;You have now created your first Kontakt script!&lt;/p&gt;
 
 &lt;p&gt;The tutorial to follow will discuss adding buttons to your interface.&lt;/p&gt;
+
+&lt;p&gt;Copyright © 2022 THI. All rights reserved. gelvinwhite.com is operated by THI.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.&lt;/em&gt;&lt;/p&gt;
 </content>

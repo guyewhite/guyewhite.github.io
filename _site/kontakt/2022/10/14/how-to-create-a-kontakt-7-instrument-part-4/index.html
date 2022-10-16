@@ -239,7 +239,7 @@ end on
 <h3 id="step-one---building-scales">Step One - Building Scales</h3>
 
 <ul>
-  <li>Generally speaking, <em>arrays</em> are contiguous, back-to-back, areas of memory where a series of numbers, letters, or other data types are stored.</li>
+  <li>Generally speaking, <em>arrays</em> are contiguous, back-to-back areas of memory where a series of numbers, letters, or other data types are stored.</li>
   <li>KSP offers array types for integers, real numbers, and strings.</li>
   <li>
     <p>For example, consider the following <em>integer array</em>:</p>
@@ -247,10 +247,10 @@ end on
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{this is an integer array}
 declare %myArray[4] := (0,1,2,3)
 </code></pre></div>    </div>
-    <p>Notice that the <code class="language-plaintext highlighter-rouge">declare</code> statement creates an array of type integer, signified by the <code class="language-plaintext highlighter-rouge">%</code> symbol. The number of elements allowed in this array are <code class="language-plaintext highlighter-rouge">4</code>. Then, the values for each of those four locations are assigned. So, the <em>zeroth</em> spot contains the value <code class="language-plaintext highlighter-rouge">0</code>. <code class="language-plaintext highlighter-rouge">myArray</code> of <code class="language-plaintext highlighter-rouge">1</code> (the second location of the array) contains an integer <code class="language-plaintext highlighter-rouge">1</code>. <code class="language-plaintext highlighter-rouge">myArray</code> of <code class="language-plaintext highlighter-rouge">2</code> (the third location of the array) contains an integer <code class="language-plaintext highlighter-rouge">2</code>. The last location of <code class="language-plaintext highlighter-rouge">myArray</code> is <code class="language-plaintext highlighter-rouge">myArray</code> of <code class="language-plaintext highlighter-rouge">3</code>, which contains a <code class="language-plaintext highlighter-rouge">3</code>.</p>
+    <p>Notice that the <code class="language-plaintext highlighter-rouge">declare</code> statement creates an array of type integer, signified by the <code class="language-plaintext highlighter-rouge">%</code> symbol. The number of elements allowed in this array is <code class="language-plaintext highlighter-rouge">4</code>. Then, the values for each of those four locations are assigned. So, the <em>zeroth</em> spot contains the value <code class="language-plaintext highlighter-rouge">0</code>. <code class="language-plaintext highlighter-rouge">myArray</code> of <code class="language-plaintext highlighter-rouge">1</code> (the second location of the array) contains an integer <code class="language-plaintext highlighter-rouge">1</code>. <code class="language-plaintext highlighter-rouge">myArray</code> of <code class="language-plaintext highlighter-rouge">2</code> (the third location of the array) contains an integer <code class="language-plaintext highlighter-rouge">2</code>. The last location of <code class="language-plaintext highlighter-rouge">myArray</code> is <code class="language-plaintext highlighter-rouge">myArray</code> of <code class="language-plaintext highlighter-rouge">3</code>, which contains a <code class="language-plaintext highlighter-rouge">3</code>.</p>
   </li>
   <li>
-    <p>Arrays are <em>zero-indexed</em>, in that we start counting the locations in the array starting at zero. This comports with most programming languages that count starting at zero. For example, consider this second array:</p>
+    <p>Arrays are <em>zero-indexed</em> in that we start counting the locations in the array starting at zero. This comports with most programming languages that count starting at zero. For example, consider this second array:</p>
 
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{this is another integer array}
 declare %myOtherArray[3] := (52,65,44)
@@ -266,7 +266,7 @@ declare %cMajorScale[8] := (60,62,64,65,67,69,71,72)
 </code></pre></div>    </div>
     <p>Notice that this array of integers has eight locations where one could store values. Then, eight values are assigned to these positions. The zeroth value is <code class="language-plaintext highlighter-rouge">60</code>. The last value in the array is <code class="language-plaintext highlighter-rouge">72</code>.</p>
   </li>
-  <li>Midi notes are assigned specific integer values by industry standard. <code class="language-plaintext highlighter-rouge">60</code> is designated as a middle C (C3). <code class="language-plaintext highlighter-rouge">62</code> is designated as the D above middle C (D3). Accordingly, the array you just added to your code essentially holds the values of the C major scale. You can obtain a midi note chart simply by Googling “midi note chart”.</li>
+  <li>Midi notes are assigned specific integer values by industry standards. <code class="language-plaintext highlighter-rouge">60</code> is designated as a middle C (C3). <code class="language-plaintext highlighter-rouge">62</code> is designated as the D above middle C (D3). Accordingly, the array you just added to your code essentially holds the values of the C major scale. You can obtain a midi note chart simply by Googling “midi note chart”.</li>
   <li>
     <p>Under the code you just added, also add the line <code class="language-plaintext highlighter-rouge">declare $count := 0</code> as follows:</p>
 
@@ -315,7 +315,7 @@ end while
 
 end function
 </code></pre></div>    </div>
-    <p>Notice how this function, called <code class="language-plaintext highlighter-rouge">play</code>, will first enter a <code class="language-plaintext highlighter-rouge">while</code> loop. The <code class="language-plaintext highlighter-rouge">loop</code> will check to see if <code class="language-plaintext highlighter-rouge">count</code> is less than <code class="language-plaintext highlighter-rouge">8</code>. If so, it will message the console the current note being played in midi notation. Since, <code class="language-plaintext highlighter-rouge">%cMajorScale[0]</code> is <code class="language-plaintext highlighter-rouge">60</code> this will cause <code class="language-plaintext highlighter-rouge">60</code> to appear in the console. Then, the next line of code engages the midi engine to play a note. In this initial case, it plays the note <code class="language-plaintext highlighter-rouge">60</code> or C3. It plays it at velocity <code class="language-plaintext highlighter-rouge">127</code>, with <code class="language-plaintext highlighter-rouge">0</code> sample offset (more on that later), for length 2000000 or 2 seconds. Then, the script engine waits for <code class="language-plaintext highlighter-rouge">2000000</code> microseconds or <code class="language-plaintext highlighter-rouge">2</code> seconds. Finally, the count is increased. Next time through the loop, <code class="language-plaintext highlighter-rouge">%cMajorScale[1]</code> or <code class="language-plaintext highlighter-rouge">62</code> is played. This is a D3 note. This repeats until the scale is done. In the end, <code class="language-plaintext highlighter-rouge">count</code> is reset to <code class="language-plaintext highlighter-rouge">0</code>.</p>
+    <p>Notice how this function, called <code class="language-plaintext highlighter-rouge">play</code>, will first enter a <code class="language-plaintext highlighter-rouge">while</code> loop. The <code class="language-plaintext highlighter-rouge">loop</code> will check to see if <code class="language-plaintext highlighter-rouge">count</code> is less than <code class="language-plaintext highlighter-rouge">8</code>. If so, it will message the console the current note being played in midi notation. Since <code class="language-plaintext highlighter-rouge">%cMajorScale[0]</code> is <code class="language-plaintext highlighter-rouge">60</code> this will cause <code class="language-plaintext highlighter-rouge">60</code> to appear in the console. Then, the next line of code engages the midi engine to play a note. In this initial case, it plays note <code class="language-plaintext highlighter-rouge">60</code> or C3. It plays it at velocity <code class="language-plaintext highlighter-rouge">127</code>, with <code class="language-plaintext highlighter-rouge">0</code> sample offset (more on that later), for length <code class="language-plaintext highlighter-rouge">2000000</code> microseconds or 2 seconds. Then, the script engine waits for <code class="language-plaintext highlighter-rouge">2000000</code> microseconds or <code class="language-plaintext highlighter-rouge">2</code> seconds. Finally, the count is increased. Next time through the loop, <code class="language-plaintext highlighter-rouge">%cMajorScale[1]</code> or <code class="language-plaintext highlighter-rouge">62</code> is played. This is a D3 note. This repeats until the scale is done. In the end, <code class="language-plaintext highlighter-rouge">count</code> is reset to <code class="language-plaintext highlighter-rouge">0</code>.</p>
   </li>
   <li>
     <p>Finally, we need to tell the script processor to run this <code class="language-plaintext highlighter-rouge">play</code> function when the <code class="language-plaintext highlighter-rouge">run</code> button is pressed. Accordingly, in the <code class="language-plaintext highlighter-rouge">on ui_control($run)</code> callback, modify its contents to be the following:</p>
@@ -331,8 +331,132 @@ end on
 </code></pre></div>    </div>
     <p>Notice that this function simply executes the <code class="language-plaintext highlighter-rouge">play</code> callback. Then, it resets itself to the <code class="language-plaintext highlighter-rouge">off</code> position.</p>
   </li>
+  <li>Your program is ready to run some midi to your DAW!</li>
   <li>
-    <p>Your program is ready to run some midi to your DAW!</p>
+    <p>As a final check, your final code should appear as follows:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{this always runs when the script starts}
+on init
+
+  {set the basics of the UI, setting the height at 213 and width at 720}
+  make_perfview
+  set_ui_height_px(213)
+  set_ui_width_px(633)
+
+  {declare a variable called $run that is tied to a button. Set that button to off }
+  declare ui_switch $run
+  $run := 0
+  message("Ready to run")
+
+  {declare another button called $option1 that is tied to a button. The initial value is set to on}
+  declare ui_switch $option1
+  $option1 := 1
+  declare $option1Id
+  $option1Id := get_ui_id($option1)
+  set_control_par_str($option1Id, $CONTROL_PAR_TEXT, "A")
+
+  {declare another button called $option2 that is tied to a button. The initial value is set to off}
+  declare ui_switch $option2
+  $option2 := 0
+  declare $option2Id
+  $option2Id := get_ui_id($option2)
+  set_control_par_str($option2Id, $CONTROL_PAR_TEXT, "B")
+
+  {declare another button called $option3 that is tied to a button. The initial value is set to off}
+  declare ui_switch $option3
+  $option3 := 0
+  declare $option3Id
+  $option3Id := get_ui_id($option3)
+  set_control_par_str($option3Id, $CONTROL_PAR_TEXT, "C")
+
+  {set initial instrument state value}
+  declare @state
+  @state := "A"
+
+  {c major scale in midi notes}
+  declare %cMajorScale[8] := (60,62,64,65,67,69,71,72)
+  declare $count := 0
+
+end on
+
+{creates a function that resets the values of run}
+function resetRun()
+
+  $run := 0
+  message("Ready to run")
+
+end function
+
+function play()
+
+  while ($count &lt; 8)
+    message("Note # " &amp; %cMajorScale[$count])
+    play_note(%cMajorScale[$count],127,0,2000000)
+    wait(2000000)
+    inc ($count)
+  end while
+
+  $count := 0
+
+end function
+
+{this runs when the ui_control called $run is changed}
+on ui_control($run)
+
+  call play()
+
+  {always set the run button back to its original state}
+  $run := 0
+end on
+
+{this runs when the ui_control called $option1 is changed}
+on ui_control ($option1)
+
+  $option1 := 1
+
+  {toggle the other buttons off}
+  $option2 := 0
+  $option3 := 0
+
+  {reset the run button}
+  call resetRun()
+
+  @state := "A"
+
+end on
+
+{this runs when the ui_control called $option2 is changed}
+on ui_control ($option2)
+
+  $option2 := 1
+
+  {toggle the other buttons off}
+  $option1 := 0
+  $option3 := 0
+
+  {reset the run button}
+  call resetRun()
+
+  @state := "B"
+
+end on
+
+{this runs when the ui_control called $option3 is changed}
+on ui_control ($option3)
+
+  $option3 := 1
+
+  {toggle the other buttons off}
+  $option1 := 0
+  $option2 := 0
+
+  {reset the run button}
+  call resetRun()
+
+  @state := "C"
+
+end on
+</code></pre></div>    </div>
   </li>
 </ul>
 
@@ -355,10 +479,10 @@ end on
     <p>Within Ableton Live, this is relatively easy. First, load Kontakt with your script onto a MIDI track. Second, load a MIDI instrument of your choosing into a second track. Finally, modify the track routing as follows:</p>
 
     <p><img src="/assets/2022-10-15-how-to-create-a-kontakt-7-instrument-part-4/003.png" alt="two ableton live tracks set to record monitoring midi" title="ableton live tracks" />
-Notice that the left hand track, which is currently assigned Kontakt with our script loaded, is set to monitor <code class="language-plaintext highlighter-rouge">All Ins</code>. <code class="language-plaintext highlighter-rouge">Monitor</code> is set to <code class="language-plaintext highlighter-rouge">In</code>. The right hand track, assigned to a midi instrument of our choosing (I try to use a simple piano for development), is set to get <code class="language-plaintext highlighter-rouge">MIDI From</code> our first track. Both the top and bottom dropdowns are set to monitor the first track. Finally, and most importantly in Ableton Live, both tracks are <code class="language-plaintext highlighter-rouge">record enabled</code>.</p>
+Notice that the left-hand track, which is currently assigned Kontakt with our script loaded, is set to monitor <code class="language-plaintext highlighter-rouge">All Ins</code>. <code class="language-plaintext highlighter-rouge">Monitor</code> is set to <code class="language-plaintext highlighter-rouge">In</code>. The right-hand track, assigned to a midi instrument of our choosing (I try to use a simple piano for development), is set to get <code class="language-plaintext highlighter-rouge">MIDI From</code> our first track. Both the top and bottom dropdowns are set to monitor the first track. Finally, and most importantly, in Ableton Live, both tracks are <code class="language-plaintext highlighter-rouge">record enabled</code>.</p>
   </li>
   <li>
-    <p>If you are a Logic user, you will need to run Kontakt in the stand-alone application. With the stand-alone application running, with your script copied in, you will go to <code class="language-plaintext highlighter-rouge">Options &gt; MIDI &gt; Outputs</code> and ensure that ‘Kontakt X Virtual Instrument’. Once you have a virtual instrument loaded within Logic, it will <em>likely</em> play the resulting MIDI.</p>
+    <p>If you are a Logic user, you will need to run Kontakt in the stand-alone application. With the stand-alone application running, with your script copied in, you will go to <code class="language-plaintext highlighter-rouge">Options &gt; MIDI &gt; Outputs</code> and ensure that <code class="language-plaintext highlighter-rouge">Kontakt X Virtual Instrument</code> is <code class="language-plaintext highlighter-rouge">on</code>. Once you have a virtual instrument loaded within Logic, it will <em>likely</em> play the resulting MIDI.</p>
 
     <p><img src="/assets/2022-10-15-how-to-create-a-kontakt-7-instrument-part-4/004.png" alt="kontakt panel with midi options selected" title="kontakt midi settings" /></p>
   </li>
@@ -367,6 +491,8 @@ Notice that the left hand track, which is currently assigned Kontakt with our sc
 <h3 id="congratulations">Congratulations</h3>
 
 <p>You have now worked with MIDI for the first time in your project. In our next iteration of this series, we will be adding further possibilities for midi generation.</p>
+
+<p>Copyright © 2022 THI. All rights reserved. gelvinwhite.com is operated by THI.</p>
 
 <p><em>Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.</em></p>
 
@@ -387,7 +513,7 @@ Notice that the left hand track, which is currently assigned Kontakt with our sc
         <h3>
           <a href="/kontakt/2022/10/02/how-to-create-a-kontakt-7-instrument-part-3/">
             How to Create a Kontakt 7 Instrument (Part 3) - Switcheroo
-            <small>02 Oct 2022</small>
+            <!-- <small>02 Oct 2022</small>-->
           </a>
         </h3>
       </li>
@@ -396,7 +522,7 @@ Notice that the left hand track, which is currently assigned Kontakt with our sc
         <h3>
           <a href="/kontakt/2022/10/01/how-to-create-a-kontakt-7-instrument-part-2/">
             How to Create a Kontakt 7 Instrument (Part 2) - Push It!
-            <small>01 Oct 2022</small>
+            <!-- <small>01 Oct 2022</small>-->
           </a>
         </h3>
       </li>
@@ -405,7 +531,7 @@ Notice that the left hand track, which is currently assigned Kontakt with our sc
         <h3>
           <a href="/kontakt/2022/09/30/how-to-create-a-kontakt-7-instrument/">
             How to Create a Kontakt 7 Instrument (Part 1) - Hello World!
-            <small>30 Sep 2022</small>
+            <!-- <small>30 Sep 2022</small>-->
           </a>
         </h3>
       </li>
