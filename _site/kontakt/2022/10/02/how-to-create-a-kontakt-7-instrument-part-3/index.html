@@ -115,7 +115,7 @@
       <div class="post">
   <h1 class="post-title">How to Create a Kontakt 7 Instrument (Part 3) - Switcheroo</h1>
   <!-- <span class="post-date">02 Oct 2022</span> -->
-  <p>Welcome to the third installment of my multi-part series about how to engage in the beautiful pursuit of building your own instruments, effects, and plugins in the Kontakt Script Language.</p>
+  <p>Welcome to the third installment of my multi-part series about how to engage in the beautiful pursuit of building your own instruments, effects, and plugins in the Kontakt Script Processor (KSP).</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
@@ -531,8 +531,12 @@ on ui_control ($option3)
 
 end on
 </code></pre></div>    </div>
-    <h3 id="step-four---your-first-function">Step Four - Your First Function</h3>
   </li>
+</ul>
+
+<h3 id="step-four---your-first-function">Step Four - Your First Function</h3>
+
+<ul>
   <li>
     <p>Functions are callbacks of your own design. Functions can be useful in executing blocks of code at will – especially those that are repeated throughout your code. Notice how a specific block of code tends to repeat over and over again:</p>
 
@@ -662,7 +666,7 @@ on ui_control ($option3)
 
 end on
 </code></pre></div>    </div>
-    <p>Notice how the function called <code class="language-plaintext highlighter-rouge">resetRun</code> must appear above those callbacks that utilize this function. Through the utilization of this function, we are <em>abstracting away</em>, or simplifying, our code by taking a task that took six lines of code and reducing it down to a single line of code. Abstraction of this nature will become of particular importance as you develop as a Kontakt Script Language developer.</p>
+    <p>Notice how the function called <code class="language-plaintext highlighter-rouge">resetRun</code> must appear above those callbacks that utilize this function. Through the utilization of this function, we are <em>abstracting away</em>, or simplifying, our code by taking a task that took six lines of code and reducing it down to a single line of code. Abstraction of this nature will become of particular importance as you develop as a KSP developer.</p>
   </li>
 </ul>
 
@@ -686,6 +690,15 @@ end on
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/kontakt/2022/10/14/how-to-create-a-kontakt-7-instrument-part-4/">
+            How to Create a Kontakt 7 Instrument (Part 4) - Midi Scale
+            <small>14 Oct 2022</small>
+          </a>
+        </h3>
+      </li>
     
       <li>
         <h3>
