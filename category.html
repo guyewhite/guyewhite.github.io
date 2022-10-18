@@ -6,7 +6,6 @@ title: Categories
 
 <div id="archives">
 
-<!-- For each category -->
 {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
@@ -18,11 +17,7 @@ title: Categories
     </div>
     <a name="{{ category_name | slugize }}"></a>
 
-    <!-- `| sort: 'date '` can be omitted -->
     {% assign sorted = site.categories[category_name] | sort: 'date' | reverse %}
-
-
-    <!-- {% for post in site.categories[category_name] %} -->
 
     {% for post in sorted %}
 
