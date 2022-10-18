@@ -17,7 +17,7 @@ title: Categories
     </div>
     <a name="{{ category_name | slugize }}"></a>
 
-    {% assign sorted = site.categories[category_name] | sort: 'date' | reverse %}
+    {% assign sorted = site.categories[category_name] %}
 
     {% for post in sorted %}
 
