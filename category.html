@@ -26,11 +26,11 @@ title: Categories
 
     {% for post in sorted %}
 
-    <article class="recent-posts">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} </a>
-        <small>[{{ post.date | date_to_string }}]</small>
-      </h4>
-    </article>
+        <article class="recent-posts">
+          <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} </a>
+            <small>[{{ post.date | date_to_string }}]</small>
+          </h4>
+        </article>
 
     {% endfor %}
     <hr></hr>
