@@ -19,7 +19,7 @@ title: Categories
 
     {% assign sorted = site.categories[category_name] | sort: 'date' | reverse %}
 
-    {% for post in sorted %}
+    <!-- {% for post in sorted %}
 
         <article class="recent-posts">
           <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} </a>
@@ -27,7 +27,7 @@ title: Categories
           </h4>
         </article>
 
-    {% endfor %}
+    {% endfor %} -->
     <hr></hr>
   </div>
 {% endfor %}
