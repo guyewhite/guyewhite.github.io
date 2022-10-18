@@ -18,7 +18,7 @@ layout: default
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    {% assign sorted = site.related_posts %}
+    {% assign sorted = site.related_posts | reverse %}
     {% for post in sorted limit:5 %}
       <li>
         <h3>
