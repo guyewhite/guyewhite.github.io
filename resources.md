@@ -9,5 +9,5 @@ We stand on the shoulders of giants! The following resources have been exception
   Please note I receive a commission for the books I recommend from any linked sellers.
 </p>
 
-##Musical Programming in C
-*Conger, J. (1989). *Midi Sequencing in C.* M &amp; T Publishing. 
+## Musical Programming in C
+* Conger, J. (1989). *Midi Sequencing in C.* M &amp; T Publishing.
