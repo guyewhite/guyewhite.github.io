@@ -368,6 +368,7 @@ tbody tr:nth-child(odd) th {
   margin-top: 0;
 }
 .related-posts li small {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 75%;
   color: #999;
 }
