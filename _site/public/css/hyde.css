@@ -273,3 +273,9 @@ a.sidebar-nav-item:focus {
   margin-left: auto;
   margin-right: auto;
 }
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-family: 'East Sea Dokdo', cursive;
+}
