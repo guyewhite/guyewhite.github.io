@@ -16,9 +16,9 @@ We stand on the shoulders of giants! The following resources have been exception
 
 ## Kontakt Script Processor (KSP)
 * [Kontakt Script Language](https://www.native-instruments.com/forum/attachments/kontakt-script-language-pdf.86897/) development document.
-* [KSP Reference Manual](https://www.native-instruments.com/fileadmin/ni_media/downloads/manuals/kontakt/KONTAKT_602_KSP_Reference_Manual.pdf). As of time of this writing, the KSP Reference Manual discusses Kontakt 6. This is not a problem!
-* [Native Instruments Community](https://www.native-instruments.com/en/community/).
-* [NI Kontakt Discord](https://discord.com/invite/rTpCcpg)
+* [KSP Reference Manual](https://www.native-instruments.com/fileadmin/ni_media/downloads/manuals/kontakt/KONTAKT_602_KSP_Reference_Manual.pdf) direct from NI.
+* [Native Instruments Community](https://www.native-instruments.com/en/community/) on message board.
+* [NI Kontakt Discord](https://discord.com/invite/rTpCcpg) on a conversational platform.
 
 ## DSP Algorithms
 * [MusicDSP.org](https://MusicDSP.org) - A large collection of algorithms and walk-throughs concerning audio processing.
