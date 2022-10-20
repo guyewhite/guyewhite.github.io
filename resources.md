@@ -10,4 +10,5 @@ We stand on the shoulders of giants! The following resources have been exception
 </p>
 
 ## Musical Programming in C
+* Conger, J. (1988). *C programming for MIDI.* M &amp; T Publishing.
 * Conger, J. (1989). *Midi Sequencing in C.* M &amp; T Publishing.
