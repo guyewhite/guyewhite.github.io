@@ -14,6 +14,6 @@ We stand on the shoulders of giants! The following resources have been exception
 * Conger, J. (1989). *Midi Sequencing in C.* M &amp; T Publishing.
 * Embree, P. (1995). *C algorithms for real-time DSP.* Prentice Hall. ISBN: 9780133373530
 
-## General Digital Signal Processing (DSP) and Algorithms
+## DSP Algorithms
 * [MusicDSP.org](https://MusicDSP.org) - A large collection of algorithms and walk-throughs concerning audio processing.
-* [music-dsp list-serv at Columbia University] - A collection of all things DSP.
+* [music-dsp list-serv at Columbia University](http://sites.music.columbia.edu/cmc/music-dsp/) - A collection of all things DSP.
