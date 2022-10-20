@@ -23,3 +23,8 @@ We stand on the shoulders of giants! The following resources have been exception
 ## DSP Algorithms
 * [MusicDSP.org](https://MusicDSP.org) - A large collection of algorithms and walk-throughs concerning audio processing.
 * [music-dsp list-serv at Columbia University](http://sites.music.columbia.edu/cmc/music-dsp/) - A collection of all things DSP.
+
+## Academia
+* [CCRMA: Center for Computer Research in Music and Acoustics](https://ccrma.stanford.edu) - If they had an online graduate degree or certificate, I would do it!
+* [CS50](http://cs50.harvard.edu/x) - The world's most well-known, prolific, free introduction to the intellectual enterprises of computer science and the art of programming.
+* [MIT Music Technology](https://musictech.mit.edu) - Again, I wish they had an online graduate degree or certificate!
