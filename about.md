@@ -15,7 +15,12 @@ I teach in at a well-known university in a well-known computer science course. I
 
 My primary contributions are in the form of Native Instruments®️ Kontakt®️ Scripts and in step-by-step instruction for programming Native Instruments®️ Kontakt®️ Libraries.
 
-{academia}
+## Academia
+* Graduate Certificate in Programming *(Harvard Extension School)*
+* Advanced Professional Electronic Music Production and Sound Design /[In Progress/] *(Berklee College of Music Online)*
+* Professional Certificate Ableton Live *(Berklee College of Music Online)*
+* Doctor of Education *(University of La Verne)*
+
 {publications}
 {products}
 {selected installations}
