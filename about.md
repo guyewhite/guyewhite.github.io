@@ -17,7 +17,7 @@ My primary contributions are in the form of Native Instruments®️ Kontakt®️
 
 ## Academia
 * Graduate Certificate in Programming *(Harvard Extension School)*
-* Advanced Professional Electronic Music Production and Sound Design /[In Progress/] *(Berklee College of Music Online)*
+* Advanced Professional Electronic Music Production and Sound Design [In Progress] *(Berklee College of Music Online)*
 * Professional Certificate Ableton Live *(Berklee College of Music Online)*
 * Doctor of Education *(University of La Verne)*
 
