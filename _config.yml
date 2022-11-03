@@ -8,7 +8,7 @@ relative_permalinks: false
 
 # Setup
 title:            gelvinwhite
-tagline:          'A Jekyll theme'
+tagline:          'musical coding. generative music. algorithmic composition'
 description:      'musical coding. generative music. algorithmic composition'
 url:              gelvinwhite.com
 baseurl:          /
