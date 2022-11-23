@@ -15,13 +15,18 @@ I teach in at a well-known university in a well-known computer science course. I
 
 ![gelvinwhite](/assets/gelvinwhite02.jpg "gelvinwhite")
 
-My primary contributions are in the form of Native Instruments®️ Kontakt®️ Scripts and in step-by-step instruction for programming Native Instruments®️ Kontakt®️ Libraries.
+My primary contributions are in the form of C-based music libraries, Native Instruments®️ Kontakt®️ Scripts, and in step-by-step instruction for programming musical-based programming in C and Native Instruments®️ Kontakt®️ Libraries.
 
 ## Academia
 * Graduate Certificate in Programming *(Harvard Extension School)*
 * Advanced Professional Electronic Music Production and Sound Design [In Progress] *(Berklee College of Music Online)*
 * Professional Certificate Ableton Live *(Berklee College of Music Online)*
 * Doctor of Education *(University of La Verne)*
+
+## Code
+* [convertNoteToMidi](https://github.com/guyewhite/convertNoteToMidi): A useful C library that converts any single musical note value and octave to a midi note.
+* [CSVto3Dstrings](https://github.com/guyewhite/CSVto3Dstrings): A useful Python-based tool to convert any CSV file into a 3-d array of strings in C.
+
 
 {publications}
 {products}
