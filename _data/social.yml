@@ -3,3 +3,9 @@ instagram:
   href: 'https://www.instagram.com/'
   title: 'Instagram'
   fa-icon: 'fa-brands fa-instagram'
+
+github:
+  id: 'guyewhite'
+  href: 'https://www.github.com/'
+  title: 'Github'
+  fa-icon: 'fa-brands fa-github'
