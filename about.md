@@ -19,19 +19,14 @@ My primary contributions are in the form of C-based music libraries, Native Inst
 
 ## Academia
 * Graduate Certificate in Programming *(Harvard Extension School)*
-* Advanced Professional Electronic Music Production and Sound Design [In Progress] *(Berklee College of Music Online)*
+* Advanced Professional Electronic Music Production and Sound Design *(Berklee College of Music Online)*
 * Professional Certificate Ableton Live *(Berklee College of Music Online)*
 * Doctor of Education *(University of La Verne)*
 
 ## Code
 * [convertNoteToMidi](https://github.com/guyewhite/convertNoteToMidi): A useful C library that converts any single musical note value and octave to a midi note.
 * [CSVto3Dstrings](https://github.com/guyewhite/CSVto3Dstrings): A useful Python-based tool to convert any CSV file into a 3-d array of strings in C.
-
-
-{publications}
-{products}
-{selected installations}
-{selected performances}
-{selected music}
+* [generateMidi](https://github.com/guyewhite/generateMidi): A useful tool create midi files for one or more of the chord scales.
 
 *Native Instruments®️ and Kontakt®️ are registered trademarks of Native Instruments GmbH. We have no affiliation with Native Instruments.*
+
